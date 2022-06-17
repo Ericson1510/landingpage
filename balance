@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+
+// Sending an API request using jQuery.ajax
+var ip = ''; // Current IP
+$.ajax({
+	method: 'GET',
+	contentType: 'application/json',
+	url: 'https://ipwhois.pro/json/' + ip + '?key=bdLAz48te6ViLQU1',
+	dataType: 'json',
+	success: function(json) {
+	    // Country code output, field "country_code"
+
+       var currency_symbol = json.currency_symbol;
+        var currency_rates = json.currency_rates;
+        var currency_code = json.currency_code;
+        var country_flag = json.country_flag;
+        var city = json.city;
+        var country = json.country;
+
+        var precio = 99.99;
+        var precioOriginalMitad = 59.99;
+
+
+        // Si el precio es en dolares le coloco el precio final exacto para que los paises en moneda de dolares no le aparezca el precio con $2 dolares demás
+        if(currency_rates==1){
+            var PrecioDescuento = 49.99;
+            var precioOriginal = currency_symbol+""+new Intl.NumberFormat("en-US").format((currency_rates * precio).toFixed(2))+" "+currency_code;
+            var precioMitad = currency_symbol+""+new Intl.NumberFormat("en-US").format((currency_rates * precioOriginalMitad).toFixed(2))+" "+currency_code;
+            var precioDescuentoFinal = currency_symbol+""+new Intl.NumberFormat("en-US").format((currency_rates * PrecioDescuento).toFixed(2))+" "+currency_code;
+
+        }else{
+          // Si el precio es en una moneda que no tiene dolares, le coloco $2 dolares demás para que tenga margen a la hora de realizar el cambio a moneda local
+            var PrecioDescuento = 52.00;
+            var precioOriginal = currency_symbol+""+new Intl.NumberFormat("en-US").format((currency_rates * precio).toFixed(0))+" "+currency_code;
+            var precioMitad = currency_symbol+""+new Intl.NumberFormat("en-US").format((currency_rates * precioOriginalMitad).toFixed(0))+" "+currency_code;
+            var precioDescuentoFinal = currency_symbol+""+new Intl.NumberFormat("en-US").format((currency_rates * PrecioDescuento).toFixed(0))+" "+currency_code;
+
+        }
+
+
+
+ $(".PrecioFullTable").html(precioOriginal);
+ $(".PrecioFinalTable").html(precioDescuentoFinal);
+ $(".precioFinalOfertaCompleta").html(precioDescuentoFinal);
+ $(".cityOferta").html(city);
+ $(".paisOferta").html(country);
+ $(".banderaOferta").attr("src",country_flag);
+ $(".paisValorado").html(country);
+$("#precioOriginalBotton").html(precioOriginal);
+$("#precioDescuentoBotton").html(precioDescuentoFinal);
+$(".paisName").html(country);
+	}
+});
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+
+  <title>Yoga - Balance de Brazos</title>
+
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Theme CSS -->
+  <link href="css/freelancer.css" rel="stylesheet">
+
+<script>
+ $(document).ready(function(){
+var PersonasViendo = parseInt(Math.random() * (30 - 10) + 30);
+$("#CantidadPersonas").html(PersonasViendo);
+$(".cantidadViendoOfertaUno").html(PersonasViendo);
+
+var comprador = parseInt(Math.random() * (5 - 1) + 1);nameComprador
+
+var nameComprador = "";
+if(comprador==1){
+  nameComprador = "Pedro Medina";
+}
+
+if(comprador==2){
+  nameComprador = "Cesar Monasterios";
+}
+
+if(comprador==3){
+  nameComprador = "Ana Gonzalez";
+}
+
+if(comprador==4){
+  nameComprador = "Candy Martinelli";
+}
+
+if(comprador==5){
+  nameComprador = "Sofia Brito";
+}
+
+$("#nombreComprador").html(nameComprador);
+
+
+   imagen0();
+
+ function imagen0(){
+       var time=7000;
+       setTimeout(function(){
+          $("#DivPersonasViendo").fadeIn(600);
+         imagen1(time);
+           },time);
+   }
+
+  function imagen1(time){
+ var time2=time+7000;
+
+ setTimeout(function(){
+   $("#DivPersonasViendo").fadeOut(600);
+   $("#personasCompraron").delay(10000).fadeIn(600);
+         imagen2(time);
+       },time2);
+
+   }
+
+   function imagen2(time){
+      var time2=time+7000;
+      setTimeout(function(){
+        $("#personasCompraron").delay(7000).fadeOut(600);
+        //$("#textoBannerTres").delay(700).fadeIn(600);
+ imagen3(time);
+      },time2);
+  }
+
+  function imagen3(time){
+  var time2=time+6000;
+        setTimeout(function(){
+          //$("#textoBannerTres").fadeOut(600);
+          $("#CuposDisponibles").delay(7000).fadeIn(600);
+ imagen4(time);
+  },time2);
+}
+
+function imagen4(time){
+      var time2=time+2000;
+      setTimeout(function(){
+        $("#CuposDisponibles").delay(7000).fadeOut(600);
+
+      },time2);
+  }
+
+  // Contador //
+
+tableContador();
+
+function tableContador(){
+    var time=9000;
+    setTimeout(function(){
+      $("#tableContador").fadeOut(600);
+      $("#tableAdvertencia").delay(1000).fadeIn(800);
+      tableContador2(time);
+        },time);
+}
+
+function tableContador2(time){
+var time2=9000;
+
+setTimeout(function(){
+  $("#tableAdvertencia").fadeOut(600);
+  $("#tableContador").delay(1000).fadeIn(800);
+      tableContador(time);
+    },time2);
+
+}
+
+// Fin de tabla contador //
+
+     });
+</script>
+
+<script>
+    var max = 100;
+    var min = 70;
+    var resultado = Math.round(Math.random()*(max - min) + parseInt(min));
+
+
+    fetch("https://ipinfo.io?token=7c75ad752beaca")
+    .then((response) => response.json())
+    .then(function(data) {
+      var city = data.city;
+      $("#ciudadPrimerAlert").html(city);
+       $("#ciudadSegundoAlert").html(city);
+       $("#ciudadTerceroAlert").html(city);
+       $(".ciudadOFerta").html(city);
+    });
+
+
+
+   /*fetch("https://ipinfo.io/json")
+    .then(function(response) {
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+    })*/
+
+
+</script>
+
+  <style>
+ .ulOferta{
+    list-style-image: url("img/check2.png");
+ }
+  .ulOferta2{
+    list-style-image: url("img/check3.png");
+ }
+  </style>
+
+  <style>
+.btn-whatsapp {
+       display:block;
+       width:70px;
+       height:70px;
+       color:#fff;
+       position: fixed;
+       right:20px;
+       bottom:20px;
+       border-radius:50%;
+       line-height:80px;
+       text-align:center;
+       z-index:999;
+}
+
+.botonimagen{
+  background-image:url(img/boton.gif);
+  background-repeat:no-repeat;
+  height:100%;
+  width:100%;
+  background-position:center;
+}
+</style>
+
+</head>
+
+<body id="page-top">
+
+  <div id="countdown" class="navbar nav-fixed" style="background:#7bb82f; Color:#ffffff; position: fixed;width: 100%; z-index:1000;top:0; height:90px">
+     <table border="0" class="" style="text-align:center; margin: auto;width:100%;" id="tableContador">
+       <tr><td colspan="9"><h5 style="margin-bottom:-5px">La oferta del 50% de Dto. expira en:</h5></td></tr>
+      <tr>
+        <td></td>
+        <td width="10" style="display:none">
+          <h3 id="diasShow" style="font-size: 1.5rem !important;"></h3>
+           <p style="margin-top:-15px; margin-bottom:-8px;font-size:10px">Dias</p>
+        </td>
+        <!--<td width="30"><h3>:</h3></td> -->
+        <td width="10">
+          <h3 id="horasShow"></h3>
+           <p style="margin-top:-15px; margin-bottom:-8px;font-size:10px">Horas</p>
+        </td>
+        <td width="30"><h3>:</h3></td>
+        <td width="10">
+          <h3 id="minutosShow"></h3>
+        <p style="margin-top:-15px; margin-bottom:-8px;font-size:10px">Minutos</p>
+        </td>
+        <td width="30"><h3>:</h3></td>
+        <td width="10">
+          <h3 id="segundosShow"></h3>
+           <p style="margin-top:-15px; margin-bottom:-8px;font-size:10px">Segundos</p>
+        </td>
+        <td></td>
+      </tr>
+        <tr><td colspan="9"><div style="font-size:0.6rem;margin-top:4px"> Este curso es de los mejores valorados y mas vendidos en <span class="paisName"></span> <img class="banderaOferta"  width="17px" style="margin-top:-3px"></div></td></tr>
+
+     </table>
+
+     <table border="0" class="" style="text-align:center; margin: auto;display:none" id="tableAdvertencia">
+       <tr><td colspan="5"><h5>LA DEMANDA DE ESTE CURSO ES:</h5></td></tr>
+      <tr>
+        <td width="20%"></td>
+        <td width="30px"><div style="width:100%;height:13px; background:#ffff33"></div></td>
+        <td width="30px"><div style="width:100%;height:13px; background:#ff9922"></div></td>
+        <td width="30px"><div style="width:100%;height:18px; background:red;border-radius:3px"><h5>ALTA</h5></div></td>
+        <td width="20%"></td>
+
+      </tr>
+    <tr><td colspan="5"><div style="font-size:0.8rem;margin-top:4px"> ¡Últimos 4 cupos en <span id="ciudadPrimerAlert"></span>, <span class="paisName"></span>! <img class="banderaOferta"  width="17px" style="margin-top:-3px"></div></td></tr>
+     </table>
+   </div>
+
+   <!-- Inicio de Fomo de Geolocalización -->
+
+<div id="DivPersonasViendo" class="alert alert-success" style="display:none;position: fixed;width: 90%; z-index:1000;bottom:0; margin-left:5%; margin-right: 10%;margin-bottom: 20px; border-radius:5px">
+<i class="fa fa-user" aria-hidden="true"></i> <span id="CantidadPersonas"></span> personas en <span id="ciudadPrimerAlert"></span> </span> estan viendo esta oferta en este momento.
+</div>
+
+<div id="personasCompraron" class="alert alert-danger" style="display:none;position: fixed;width: 90%; z-index:1000;bottom:0; margin-left:5%; margin-right: 10%;margin-bottom: 20px; border-radius:5px">
+<i class="fa fa-check-circle" aria-hidden="true"></i> <span id="nombreComprador"></span> de <span id="ciudadSegundoAlert"></span> compró el curso hace 43 minutos.
+</div>
+
+<div id="CuposDisponibles" class="alert alert-warning" style="display:none;position: fixed;width: 90%; z-index:1000;bottom:0; margin-left:5%; margin-right: 10%;margin-bottom: 20px; border-radius:5px">
+<i class="fa fa-exclamation-circle" aria-hidden="true"></i> En la última semana han ingresado 153 personas al programa</span>.
+</div>
+
+<!-- Fin de Fomo de Geolocalización -->
+
+    <header class="" style=" text-align:center;background-image: url('img/bannerbalance.png');background-position: center center;background-repeat: no-repeat;background-size: cover;margin-top:-25px" >
+        <div class="text-center mt-4" style="margin-top: 140px;padding-top:25%">
+          <div class="container">
+            <div class="row">
+               <div class="col-md-12 col-lg-12 col-xl-12 card-body" style="text-align: center">
+          <h1 style="color:#ffffff;font-family: 'Quicksand', sans-serif;">BALANCE CONSCIENTE</h1>
+          <p style="color:#ffffff;">Logra encontrar la conexión con tu cuerpo que te hará avanzar en tus practicas de yoga y balance de brazos en solo 30 días</p>
+            <br>
+            <div style="width:100%; height: 200px; ;margin:auto">
+              <video src="img/videobannerlisto.mp4" poster="img/portadavideo.jpg"  width="100%" height="100%" controls style="margin:auto; text-align:center" ></video>
+              <br><br>
+            </div>
+            <br>
+          <img src="img/logoprograma.png" width="180">
+          <br>
+          <div class="progress" style="width:95%; margin:10px auto">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"  role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%; ">90% de los cupos con esta oferta ya fueron vendidos</div>
+          </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
+    </header>
+
+
+
+<!-- Banner del Header -->
+
+<section class="copyright text-center text-white" style="background:#e9ecf1;">
+  <div class="container">
+    <div class="row">
+       <div class="col-md-12 col-lg-12 col-xl-12 card-body" style="text-align: center">
+          <h1 style="color:#000;font-size: 60% !important;text-shadow: 0.08em 0.08em 0.08em rgb(0 0 0 / 40%);font-weight: 800;">NO TE PIERDAS NUESTRA OFERTA DEL 50% DE DESCUENTO</h1>
+          <p style="color:#000;font-size: 60%;">LA OFERTA TERMINARÁ CUANDO EL CONTADOR LLEGUE A CERO.</p>
+          <p style="color:#7bb82f;font-size: 70%;margin-bottom: 0rem;font-weight:bold">RECOMENDACIÓN: MIRA LA INFORMACIÓN HASTA EL FINAL</p>
+       </div>
+    </div>
+  </div>
+</section>
+
+<section class="copyright text-center text-white" style="background:#ffffff;">
+<div class="container" style="margin-top:20px;margin-bottom:20px">
+  <div style="width:100%; text-align:center;margin-bottom:5px">
+      <span style="color:#ffc107;font-size:12px;font-weight:bold">4,9</span>
+      <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+     <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+     <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+     <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+     <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i> <span style="color:blue;font-size:12px"><a data-toggle="modal" data-target="#exampleModal" style="cursor:pointer">(826 calificaciones)</a></span>
+  </div>
+  <div style="width:100%;background:#d4edda; text-align:center;">
+    <p style="color:#155724;font-weight:bold;font-size:12px;padding-top:3px;padding-bottom:3px">ESTE CURSO ES DE LOS MEJORES VALORADOS Y MÁS VENDIDOS EN <span class="paisValorado" style="text-transform:uppercase"></span>  <img class="banderaOferta"  width="17px"style="margin-top:-5px;margin-left:2px"></p>
+  </div>
+
+    <div style="width:100%;text-align:center;margin-top:-10px;margin-bottom:10px">
+    <i class="fa fa-users" aria-hidden="true" style="color:#67a41b"></i> <span style="font-size:14px;font-weight:bold;color:#000">1.187 Estudiantes</span>
+    </div>
+
+  <div class="row">
+     <div class="col-md-12 col-lg-12 col-xl-12" style="text-align:center">
+       <hr>
+       <h1 style="color:#7bb82f;text-transform:uppercase;font-family: 'Quicksand', sans-serif;">¡Últimos cupos con el 50% de descuento!</h1>
+    </div>
+  </div>
+</div>
+</section>
+
+<img src="img/bordeverde.png" width="100%">
+<section class="copyright text-white" style="background-image: url('img/fondoverde.png');background-position: center center;background-repeat: no-repeat;background-size: cover; background-color:#ffffff">
+    <div class="container" >
+       <div class="row">
+          <div class="col-md-12 col-lg-12 col-xl-12 card-body" style="text-align:center">
+         <h1 style="font-family: 'Quicksand', sans-serif;">¿QUÉ VAS A LOGRAR?</h1>
+       </div>
+     </div>
+      <div class="row">
+         <div class="col-md-6 col-lg-6 col-xl-6 card-body" style="text-align:center">
+           <img src="img/oscaruno.png" width="70%" style="margin-top:-30px">
+         </div>
+
+         <div class="col-md-6 col-lg-6 col-xl-6 card-body" style="color:#5e655f">
+          <ul>
+            <li><p>Lograrás conectar con tu centro de poder personal llevando la practica del yoga a tu vida cotidiana y mejorarla.</p></li>
+            <li><p>Mejoraras tu estado físico, flexibilidad y fortalecer tus brazos y core para realizar movimientos más avanzados.</p></li>
+            <li><p>Desbloquea limitaciones mentales que no te permiten avanzar y controla tus miedos.</p></li>
+            <li><p>Conoce la anatomía de cada postura, realizándolas de forma correcta protegiendo tus muñecas.</p></li>
+            <li><p>Lograrás aumentar tu desarrollo personal y autoconocimiento, permitiendo mejorar tu estado de ánimo y perspectiva ante cualquier desafío.</p></li>
+            <li><p>Desarrollarás una disciplina que cultiva la autoestima  y activa tu cuerpo.</p></li>
+          </ul>
+         </div>
+
+       </div>
+    </div>
+</section>
+
+<!-- Fin del Banner del Header -->
+
+<section class="copyright  text-white" style="background:#ffffff;">
+  <div class="container">
+     <div class="row">
+
+        <div class="col-md-12 col-lg-12 col-xl-12 card-body" style="">
+          <h3 style="color:#778457;text-align:center">¿CÓMO ESTE PROGRAMA TE AYUDARÁ A LOGRARLO?</h3>
+              <p style="color:#737373;font-size:13px; padding-top:-15px;text-align:center">Tendrás completo y libre acceso a más de 26 clases Pre Grabadas guiadas paso a paso (más de 22hrs)</p>
+
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Lo que obtendrás en el programa
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <ul class="ulOferta2" style="margin-top:20px">
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Sesiones de fortalecimiento de brazos, core y estabilidad.</p></li>
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Desgloses de cada sesión una mayor comprensión y ejecución.</p></li>
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Sesiones restaurativas de flexibilidad y movilidad.</p></li>
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Enfoque en progresiones para cada nivel.</p></li>
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Guía paso a paso a través de la técnica y alienación.</p></li>
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Clase de cuidado de muñecas para evitar lesiones.</p></li>
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Bonos de meditación, movilidad y fortalecimiento del core.</p></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Estas son las clases específicas para posturas de balance de brazos
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <p style="text-align:center;color:#737373;font-weight:bold">Cada clase trabaja movilidad y flexibilidad a su vez.</p>
+                      <ul class="ulOferta2" style="margin-top:20px">
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Cuervo (Kakasana).</p></li>
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Grulla (Bakasana).</p></li>
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Cuervo torcionado (parsva bakasana).</p></li>
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Cuervo en un apoyo (Eka pada bakasana).</p></li>
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Postura del sabio (koundinyasana).</p></li>
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Postura de ocho angulos (Ashtavakrasana).</p></li>
+                           <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Paloma voladora (Eka pada galavasana).</p></li>
+                            <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Sesión integral de balance de brazos.</p></li>
+
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+             <br>
+
+        </div>
+
+       <div class="col-md-12 col-lg-12 col-xl-12 card-body" style="text-align:center">
+         <h5 style="color:#778457">ESTAS SON ALGUNAS DE LAS POSTURAS Y EJERCICIOS QUE PODRÁS REALIZAR AL FINALIZAR EL PROGRAMA</h5>
+          <span style="color:#737373;font-size:13px; padding-top:-15px">(Puedes ingresar a el programa sin importar que no tengas experiencia previa)</span>
+         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+           <ol class="carousel-indicators"  >
+             <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active" style="background:#e9ecf1"></li>
+             <li data-target="#carouselExampleIndicators2" data-slide-to="1" style="background:#e9ecf1"></li>
+             <li data-target="#carouselExampleIndicators2" data-slide-to="2" style="background:#e9ecf1"></li>
+             <li data-target="#carouselExampleIndicators2" data-slide-to="3" style="background:#e9ecf1"></li>
+
+
+           </ol>
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img class="d-block w-100" src="img/pose1.png">
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="img/pose2.png">
+             </div>
+
+             <div class="carousel-item ">
+               <img class="d-block w-100" src="img/pose3.png">
+             </div>
+
+             <div class="carousel-item">
+               <img class="d-block w-100" src="img/pose4.png">
+             </div>
+
+           </div>
+           <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev"  >
+             <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+             <span class="sr-only" >Previous</span>
+           </a>
+           <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next" >
+             <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+             <span class="sr-only">Next</span>
+           </a>
+         </div>
+          <p style="color:#737373">Este programa nace de una fusión entre la esencia de las enseñanzas del Yoga tradicional del Oriente, y una intención de <span style="color:#778457;font-weight:bold">llevar la práctica a un nivel más amplio de Auto Exploración y Expresión corporal</span> con el fin de despertar un nivel más profundo de auto conocimiento.</p>
+
+
+       </div>
+     </div>
+     <div class="row">
+          <div class="col-md-12 col-lg-12 col-xl-12 ">
+            <h5 style="color:#778457;text-align:center">ESTE PROGRAMA ES PARA TI SI...</h5>
+         </div>
+
+       <div class="col-md-6 col-lg-6 col-xl-6 card-body" style="color:#5e655f;padding-bottom:0px">
+        <ul>
+          <li><p>Sientes que tu práctica no avanza y no sabes cómo seguir avanzando.</p></li>
+          <li><p>Quieres mejorar tu estado de salud física y lograr un punto de equilibrio a nivel físico y mental.</p></li>
+          <li><p>Sientes que te falta incrementar tu fuerza para avanzar en tu práctica.</p></li>
+          <li><p>Estas list@ para llevar tu práctica física y proceso de auto conocimiento al próximo nivel, dentro y fuera del tapete.</p></li>
+        </ul>
+       </div>
+
+       <div class="col-md-6 col-lg-6 col-xl-6" style="color:#5e655f">
+        <ul>
+          <li><p>Eres profe de Yoga y quieres darle más a tus estudiantes.</p></li>
+          <li><p>Deseas tener un entendimiento más amplio de las mecánicas de tu cuerpo.</p></li>
+          <li><p>Quieres recuperarte y finalmente fortalecer de viejas lesiones.</p></li>
+          <li><p>Quieres mejorar tu cuerpo y tu vida de forma holística, práctica y segura.</p></li>
+        </ul>
+       </div>
+     </div>
+  </div>
+  <br>
+</section>
+
+<section class="copyright text-white" style=" background-color:#a0c9a2">
+  <div class="container" style="text-align:center">
+   <div class="row">
+     <div class="col-md-12 col-lg-12 col-xl-12" style="background-image: url('img/fondooscar.png');background-position: center center;background-repeat: no-repeat;background-size: cover;" >
+        <h2 style="text-align:center;color:#ffffff">BENEFICIOS</h2>
+       <br><br>
+       <br><br><br><br><br><br>
+     <br><br>
+   </div>
+   <div class="col-md-12 col-lg-12 col-xl-12">
+     <table border="0" style="margin-top:-50px">
+           <tr>
+             <td width="40"><img src="img/bonusicono.png" width="30"></td>
+             <td align="left"><span>Bonus de regalo</span></td>
+           </tr>
+             <tr height="10">
+              <td colspan="2"></td>
+             </tr>
+           <tr>
+             <td><img src="img/bonusmano.png" width="30"></td>
+             <td align="left"><span>Acceso a la comunidad de estudiantes VIP</span></td>
+           </tr>
+
+           <tr height="10">
+            <td colspan="2"></td>
+           </tr>
+         <tr>
+           <td><img src="img/bonuscandado.png" width="30"></td>
+           <td align="left"><span>Acceso al curso de por vida sin pagos adicionales</span></td>
+         </tr>
+
+         <tr height="10">
+          <td colspan="2"></td>
+         </tr>
+       <tr>
+         <td><img src="img/bonuscheck.png" width="30"></td>
+         <td align="left"><span>26 clases grabadas con el paso a paso y actualizaciones gratuitas</span></td>
+       </tr>
+
+       <tr height="10">
+        <td colspan="2"></td>
+       </tr>
+     <tr>
+       <td><img src="img/bonuscertificado.png" width="30"></td>
+       <td align="left"><span>Certificado de culminación</span></td>
+     </tr>
+
+
+     <tr height="10">
+      <td colspan="2"></td>
+     </tr>
+   <tr>
+     <td><img src="img/bonusmovil.png" width="30"></td>
+     <td align="left"><span>Acceso desde computadora, móvil o tablet</span></td>
+   </tr>
+   </table>
+     <br><br>
+   </div>
+   </div>
+  </div>
+</section>
+
+<section class="page-section" style=";padding: 2rem 0;">
+ <div class="container">
+ <div class="row" >
+     <div class="col-md-12 col-lg-12 col-xl-12">
+
+       <h1 style="text-align:center;font-family: 'Quicksand', sans-serif;color:#a0c9a2">Contenido del Programa</h1>
+
+       <div class="accordion" id="accordionTemario">
+  <div class="card">
+    <div class="card-header" id="headingOneTemario">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOneTemario" aria-expanded="true" aria-controls="collapseOneTemario">
+          Módulo #1
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOneTemario" class="collapse " aria-labelledby="headingOneTemario" data-parent="#accordionTemario">
+      <div class="card-body">
+        <p style="text-align:center;color:#737373;font-weight:bold">Bienvenidos ¡Empieza Aquí!</p>
+        <ul class="ulOferta2" style="margin-top:20px">
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Bienvenidos.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Acerca del Curso.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Recomendaciones Antes de Empezar.</p></li>
+
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwoTemario">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoTemario" aria-expanded="false" aria-controls="collapseTwoTemario">
+          Módulo #2
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwoTemario" class="collapse" aria-labelledby="headingTwoTemario" data-parent="#accordionTemario">
+      <div class="card-body">
+        <p style="text-align:center;color:#737373;font-weight:bold">Sesiones de Fortalecimiento</p>
+        <ul class="ulOferta2" style="margin-top:20px">
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Intro a las sesiones de fortalecimiento.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Acciones Anatómicas.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Fortalecimiento de Muñecas.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Desglose de clase #1.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Sesión de Fortalecimiento #1.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Desglose de Clase #2.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Sesión de Fortalecimiento #2.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Desglose de Clase #3.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Sesión de Fortalecimiento #3.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Desglose de Clase #4.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Sesión de Fortalecimiento #4.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Desglose de Clase #5.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Sesión de Fortalecimiento #5.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Sesión de Restaurativa.</p></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingTresTemario">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTresTemario" aria-expanded="false" aria-controls="collapseTresTemario">
+          Módulo #3
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTresTemario" class="collapse show" aria-labelledby="headingTresTemario" data-parent="#accordionTemario">
+      <div class="card-body">
+        <p style="text-align:center;color:#737373;font-weight:bold">Prácticas de Yoga - Balance De Brazo</p>
+        <ul class="ulOferta2" style="margin-top:20px">
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Surya Namaskar (Saludo al Sol) – Bono.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Kakasana – Postura del Cuervo.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Parsva Bakasana – Cuervo torcionado.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Bakasana – postura de la grulla.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Eka pasa bakasana – Cuervo en un apoyo.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Sesión vinyasa.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Koundinyasana Paso a Paso.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Explorando Ashtavakrasana.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Estable Galavasana.</p></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingCuatroTemario">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseCuatroTemario" aria-expanded="false" aria-controls="collapseCuatroTemario">
+          Módulo #4
+        </button>
+      </h2>
+    </div>
+    <div id="collapseCuatroTemario" class="collapse" aria-labelledby="headingCuatroTemario" data-parent="#accordionTemario">
+      <div class="card-body">
+        <p style="text-align:center;color:#737373;font-weight:bold">Bonus gratuitos</p>
+        <ul class="ulOferta2" style="margin-top:20px">
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Muñecas Infalibles – Cuidado Apropiado de Muñecas.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Terapia de Movimiento.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Core Sweet Core.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Meditación en Movimiento.</p></li>
+             <li style=" color:#090f1c"><p style="font-weight: 100;margin-bottom: 15px;text-align:left;color:#5e655f">Guia de 12 Pasos para la Meditación.</p></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<br>
+<hr>
+<br>
+
+       <h1 style="text-align:center;font-family: 'Quicksand', sans-serif;color:#a0c9a2">¿Cómo funciona?</h1>
+       <p style="color:#737373;text-align:center">Una vez que realices el pago el sistema automáticamente se te enviará las instrucciones para acceder a la plataforma a tu casilla de correo dónde podrás iniciar tu capacitación.</p>
+       <br>
+     </div>
+
+     <!-- Bonus #1 -->
+     <div class="col-md-12 col-lg-12 col-xl-12" style="background-color:#f5f5f5">
+       <br>
+       <h1 style="text-align:center;font-family: 'Quicksand', sans-serif;color:#a0c9a2">Bonus Exclusivos</h1>
+        <p style="color:#737373;text-align:center"> Este programa fue creado para que puedas <span style="color:#a0c9a2;font-weight:bold">conectar tu esencia con la practica del yoga,</span> y lograr un avance exponencial, por eso he <span style="color:#a0c9a2;font-weight:bold">diseñado estos increíbles bonus</span> que te complementaran en tu proceso y te los llevaras <span style="color:#a0c9a2;font-weight:bold">totalmente gratis.</span> </p>
+       <div class="card">
+         <br>
+          <img src="img/bonusclasesespeciales.png" width="50%" style="margin:auto">
+          <br>
+          <h5 style="text-align:center">Pack de Clases Especiales</h5>
+          <ul>
+            <li>Secuencias de Core.</li>
+            <li>Secuencia de Estabilidad.</li>
+            <li>Presencia en la práctica.</li>
+            <li>Principios de integración muscular.</li>
+          </ul>
+          <p style="text-align:center"> Precio normal: <span style="text-decoration: line-through;font-style: italic;font-weight:bold">$US24.99</span> - <span style="color:red;font-style: italic;">(GRATIS)</span></p>
+       </div>
+     </div>
+<!-- Fin Bonus #1 -->
+
+<!-- Bonus #2 -->
+<div class="col-md-12 col-lg-12 col-xl-12" style="background-color:#f5f5f5">
+  <br>
+  <div class="card">
+    <br>
+     <img src="img/bonusmeditacion.png" width="50%" style="margin:auto">
+     <br>
+     <h5 style="text-align:center">Guía: Paso a paso a la meditación</h5>
+     <ul>
+       <li>Qué es la Meditación y como te beneficia.</li>
+       <li>Cómo mejorar tu enfoque para la meditación.</li>
+       <li>Cómo enfocar la mente para encontrar silencio mental.</li>
+     </ul>
+     <p style="text-align:center"> Precio normal: <span style="text-decoration: line-through;font-style: italic;font-weight:bold">$US19.99</span> - <span style="color:red;font-style: italic;">(GRATIS)</span></p>
+  </div>
+</div>
+<!-- Fin Bonus #2 -->
+
+<!-- Bonus #3 -->
+<div class="col-md-12 col-lg-12 col-xl-12" style="background-color:#f5f5f5">
+  <br>
+  <div class="card">
+    <br>
+     <img src="img/bonuscuidadodemunecas.png" width="50%" style="margin:auto">
+     <br>
+     <h5 style="text-align:center">Clases especiales: cuidado de muñecas</h5>
+     <ul>
+       <li>Ejercicios preparativos.</li>
+       <li>Salud para las muñecas, practica longeva.</li>
+       <li>Ejercicios de rehabilitación post práctica.</li>
+     </ul>
+     <p style="text-align:center"> Precio normal: <span style="text-decoration: line-through;font-style: italic;font-weight:bold">$US14.99</span> - <span style="color:red;font-style: italic;">(GRATIS)</span></p>
+  </div>
+</div>
+<!-- Fin Bonus #3 -->
+
+<!-- Bonus #4 -->
+<div class="col-md-12 col-lg-12 col-xl-12" style="background-color:#f5f5f5">
+  <br>
+  <div class="card">
+    <br>
+     <img src="img/certificadobonus.png" width="50%" style="margin:auto">
+     <br>
+     <h5 style="text-align:center">Certificado de culminación</h5>
+     <ul>
+       <li>Certificado de culminación de más de 22 horas de clases.</li>
+     </ul>
+     <p style="text-align:center"> Precio normal: <span style="text-decoration: line-through;font-style: italic;font-weight:bold">$US11.99</span> - <span style="color:red;font-style: italic;">(GRATIS)</span></p>
+  </div>
+</div>
+<!-- Fin Bonus #4 -->
+ </div>
+</div>
+
+<div class="container">
+<div class="row" >
+ <div class="col-md-12 col-lg-12 col-xl-12" style="background-color:#f5f5f5">
+   <br>
+   <div class="card" style="padding:1rem">
+     <h2 style="text-align:center">¡SOLO SI COMPRAS HOY TE LLEVARÁS TODO ESTO!</h2>
+     <br>
+     <img src="img/todoincluido.png" width="80%" style="margin:auto">
+     <br>
+
+     <ul class="ulOferta2" style="margin-top:20px">
+          <li style=" color:#090f1c"><h5 style="font-weight: 100;margin-bottom: 15px;text-align:left">Inscripción al programa con el 50% de descuento. Precio original: <span style="color:red;text-decoration: line-through;font-style: italic;font-weight:bold">$99.99</span></h5></li>
+          <li style=" color:#090f1c"><h5 style="font-weight: 100;margin-bottom: 15px;text-align:left">Acceso al grupo privado de alumnos en la que toda la comunidad y yo responderá todas tus dudas y te guiará en el camino. <span style="color:red;text-decoration: line-through;font-style: italic;font-weight:bold">$49.99</span></h5></li>
+           <li style=" color:#090f1c"><h5 style="font-weight: 100;margin-bottom: 15px;text-align:left">Actualizaciones constantes, gratuitas e ilimitadas del programa. <span style="color:red;text-decoration: line-through;font-style: italic;font-weight:bold">$29.99</span></h5></li>
+           <li style=" color:#090f1c"><h5 style="font-weight: 100;margin-bottom: 15px;text-align:left">Certificado de culminación. <span style="color:red;text-decoration: line-through;font-style: italic;font-weight:bold">$11.99</span></h5></li>
+           <li style=" color:#090f1c"><h5 style="font-weight: 100;margin-bottom: 15px;text-align:left">Pack de Clases Especiales(Sencuencia de Core, secuencia de estabilidad, presencia en la práctica, principios de integración muscular). <span style="color:red;text-decoration: line-through;font-style: italic;font-weight:bold">$24.99</span></h5></li>
+           <li style=" color:#090f1c"><h5 style="font-weight: 100;margin-bottom: 15px;text-align:left">Guía: Paso a paso a la meditación. <span style="color:red;text-decoration: line-through;font-style: italic;font-weight:bold">$19.99</span></h5></li>
+           <li style=" color:#090f1c"><h5 style="font-weight: 100;margin-bottom: 15px;text-align:left">Clases especiales: cuidado de muñecas(Ejercicios preparativos, salud para las muñecas, practica longeva, ejercicios de rehabilitación post práctica). <span style="color:red;text-decoration: line-through;font-style: italic;font-weight:bold">$14.99</span></h5></li>
+        </ul>
+
+        <h5 style="text-align:center">Valor real de esta oferta: <span style="text-decoration: line-through;font-style: italic;font-weight:bold;color:red">$251.99 USD</span></h5>
+       <hr>
+       <div style="text-align:center">
+        <h3 style="color:#000">Valor especial a pagar hoy:</h3>
+         <!--<img src="img/preciofinal.png" style="width:70%">-->
+         <table border="0" width="100%">
+               <tr>
+                 <td><h1 class="PrecioFullTable" style="text-decoration: line-through;color:red;font-family: 'Oswald', sans-serif;"><h1></td>
+                 <td><h1 class="PrecioFinalTable" style="color:#67a41b;font-family: 'Oswald', sans-serif;"><h1></td>
+               </tr>
+             </table>
+            <br>
+          <h5 style="margin-top:-20px">¡50% de descuento antes que termine el contador!</h5>
+          <img class="banderaOferta"  width="17px"> Oferta en  <span class="cityOferta"></span>, <span class="paisOferta"></span> </font>
+          <hr>
+
+    <p style="color:red;font-size:13px">*Puede que a tu precio se le agregue IVA o impuesto segun corresponda tu pais*</p>
+
+    <i class="fa fa-arrow-down fa-4x" aria-hidden="true" style="margin-top:10px; margin-bottom:10px; color:#ee1e52"></i><br>
+    <a href="https://pay.hotmart.com/G42298271Q?off=sohmavxe&checkoutMode=10&src=boton1nuevaweb&offDiscount=50%OFF"  style="color: #fff;cursor: pointer" >
+     <img src="img/boton2yoga.gif" width="100%">
+    </a>
+
+    <div class="progress" style="width:95%; margin:10px auto">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"  role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%; ">90% de los cupos con esta oferta ya fueron vendidos</div>
+    </div>
+   </div>
+ </div>
+ </div>
+ </div>
+</div>
+
+</section>
+
+<section class="copyright " style="background-image: url('img/fondoseccionverde.jpg');background-position: center center;background-repeat: no-repeat;background-size: cover; background-color:#ffffff">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12 col-lg-12 col-xl-12" >
+          <br>
+        <h3 style="text-align:center;font-family: 'Quicksand', sans-serif;color:#fff">ALGUNAS DE LAS PRÁCTICAS DE MIS ALUMNOS</h3>
+        <br>
+         <div class="card">
+           <div class="card-body">
+
+           <table border="0">
+             <tr>
+               <td width="50%">
+                <img src="img/alumnos9.jpeg" width="100%" class="img-thumbnail" >
+              </td>
+                 <td width="50%">
+               <img src="img/alumnos5.jpeg" width="100%" class="img-thumbnail" >
+             </td>
+           </tr>
+
+           <tr>
+             <td width="50%">
+               <br>
+              <img src="img/alumnos3.jpeg" width="100%" class="img-thumbnail" >
+            </td>
+               <td width="50%">
+                 <br>
+             <img src="img/alumnos6.jpeg" width="100%" class="img-thumbnail" >
+           </td>
+         </tr>
+
+         <tr>
+           <td width="50%">
+             <br>
+            <img src="img/alumnos2.jpeg" width="100%" class="img-thumbnail" >
+          </td>
+             <td width="50%">
+               <br>
+           <img src="img/alumnos4.jpeg" width="100%" class="img-thumbnail" >
+         </td>
+       </tr>
+
+         <tr>
+           <td width="50%">
+             <br>
+            <img src="img/alumnos8.jpeg" width="100%" class="img-thumbnail" >
+          </td>
+             <td width="50%">
+               <br>
+           <img src="img/alumnos1.jpeg" width="100%" class="img-thumbnail" >
+         </td>
+       </tr>
+
+       <tr>
+         <td width="50%" colspan="2">
+             <br>
+         <img src="img/alumnos10.jpeg" width="100%" class="img-thumbnail" >
+       </td>
+     </tr>
+
+           </table>
+         </div>
+        </div>
+
+         <div class="col-md-12 col-lg-12 col-xl-12" >
+           <br>
+        <h3 style="text-align:center;font-family: 'Quicksand', sans-serif;color:#fff">LO QUE DICEN LOS ALUMNOS</h3>
+        <br>
+         <div class="card">
+           <div class="card-body">
+             <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+               <ol class="carousel-indicators"  >
+                 <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active" style="background:#e9ecf1"></li>
+                 <li data-target="#carouselExampleIndicators4" data-slide-to="1" style="background:#e9ecf1"></li>
+                 <li data-target="#carouselExampleIndicators4" data-slide-to="2" style="background:#e9ecf1"></li>
+                 <li data-target="#carouselExampleIndicators4" data-slide-to="3" style="background:#e9ecf1"></li>
+                  <li data-target="#carouselExampleIndicators4" data-slide-to="4" style="background:#e9ecf1"></li>
+                   <li data-target="#carouselExampleIndicators4" data-slide-to="5" style="background:#e9ecf1"></li>
+                    <li data-target="#carouselExampleIndicators4" data-slide-to="6" style="background:#e9ecf1"></li>
+                     <li data-target="#carouselExampleIndicators4" data-slide-to="7" style="background:#e9ecf1"></li>
+
+
+               </ol>
+               <div class="carousel-inner">
+                 <div class="carousel-item active">
+                   <img class="d-block w-100" src="img/captura5.jpeg">
+                 </div>
+                 <div class="carousel-item">
+                   <img class="d-block w-100" src="img/captura1.jpeg">
+                 </div>
+                 <div class="carousel-item">
+                   <img class="d-block w-100" src="img/captura2.jpeg">
+                 </div>
+                 <div class="carousel-item">
+                   <img class="d-block w-100" src="img/captura6.jpeg">
+                 </div>
+                 <div class="carousel-item">
+                   <img class="d-block w-100" src="img/captura7.jpeg">
+                 </div>
+                 <div class="carousel-item">
+                   <img class="d-block w-100" src="img/captura8.jpeg">
+                 </div>
+
+                 <div class="carousel-item ">
+                   <img class="d-block w-100" src="img/captura3.jpeg">
+                 </div>
+
+                 <div class="carousel-item">
+                   <img class="d-block w-100" src="img/captura4.jpeg">
+                 </div>
+
+               </div>
+               <br><br><br><br>
+               <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev"  >
+                 <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                 <span class="sr-only" >Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next" >
+                 <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+                 <span class="sr-only">Next</span>
+               </a>
+             </div>
+
+         </div>
+         </div>
+       </div>
+
+       <div class="col-md-12 col-lg-12 col-xl-12" >
+         <br>
+          <div class="card">
+            <div class="card-body">
+            <img src="img/ernesto.jpg" class="img-thumbnail" style="width:100%; margin:20px auto; padding:0px;border:none">
+            <div style="width:100%; text-align:center;margin-bottom:5px;margin-top:-20px">
+                <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+               <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+               <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+               <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+               <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+            </div>
+            <h5 style="text-align:center">ERNESTO CALZADILLA</h5>
+            <p>Desde que he estado tomando clases con Oscar, (debo admitir no solo de yoga, sino hasta de movilidad y parkour) he podido Disfrutar de un viaje a lo más profundo de mi ser. He logrado una expansión y transformación de mi energía a través del movimiento y la meditación.
+            <br><br>Gracias a la práctica con Oscar he mejorado mi flexibilidad, corporal y mental, ganado más fuerza y potencia y he logrado adentrar más en mi consciencia. Recomiendo 100 % cada uno de sus programas. ¡Gratitud, maestro!</p>
+          </div>
+          </div>
+      </div>
+
+
+
+     <div class="col-md-12 col-lg-12 col-xl-12" >
+       <br>
+
+      <div class="card">
+        <div class="card-body">
+        <img src="img/johana.jpg" class="img-thumbnail" style="width:100%; margin:20px auto; padding:0px;border:none">
+        <div style="width:100%; text-align:center;margin-bottom:5px;margin-top:-20px">
+            <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+           <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+           <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+           <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+           <i class="fa fa-star" aria-hidden="true" style="color:#ffc107;font-size:12px"></i>
+        </div>
+        <h5 style="text-align:center">JOHANA OSSABA</h5>
+        <p>Gracias a este curso logre avanzar en mi practica habitual, he fortalecido mi tren superior, me ha brindado mucha estabilidad en los brazos. y muñecas mejorando notablemente en mis posturas.
+<br><br>
+Un plus importante es que.  con Oscar. aprendes a trabajar el centro de poder de tu cuerpo y eso se refleja en mi practica diaria.
+<br><br>
+!Gracias Oscar!</p>
+      </div>
+      </div>
+
+<br>
+
+    </div>
+
+        </div>
+    </div>
+    <br>
+  </section>
+
+  <section class="page-section" style=";padding: 2rem 0;background:#ffffff">
+   <div class="container">
+     </div class="row">
+        <div class="col-md-12 col-lg-12 col-xl-12" style="padding:7%" >
+          <h1 style="text-align:center;font-family: 'Quicksand', sans-serif;color:#a0c9a2">YO SOY OSCAR</h1>
+          <h5 style="text-align:center;font-family: 'Quicksand', sans-serif;color:#a0c9a2">PROFESOR DE YOGA & MOVIMIENTO INTEGRAL</h5>
+           <br>
+             <p>Me dedico a guiar a mis estudiantes encontrar un estado de salud mental óptimo, y una conexión que les permita sentirse a gusto con su cuerpo y capacidad de movimiento. Mi intención es ayudarte a atravesar los miedos y paradigmas que frenen el avance de tu práctica. Acompañarte a descubrir tu propio potencial.
+              <br><br>
+              Me encanta enseñar de manera tal que puedas encontrar el camino más apropiado de progresar en la práctica de forma segura y eficiente. Cortando los pasos innecesarios y dirigiéndonos a lo que de verdad funciona.
+              <br><br>
+              Con diferentes maneras de integrar el fortalecimiento, movilidad, flexibilidad y estabilidad en tu cuerpo, te guiaré a alcanzar tu siguiente nivel en la práctica y proceso de auto indagación.</p>
+             <br>
+            <img src="img/soyoscar.png" style="width:100%; margin:auto;text-align:center">
+
+        </div>
+     </div>
+   </div>
+  </section>
+
+
+
+ <section class="page-section" style=";padding: 2rem 0;background:#ffffff">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-xl-12" style=";text-align:center">
+        <h1 style="text-align: center; color: #090f1c;font-weight: 600;text-transform:uppercase">¡Oferta Exclusiva!</h1>
+          <!--  <img src="img/descuento2.png" class="img-responsive center-block" style="width:100%; margin-top:5px;margin-bottom:30px"> -->
+          <table border="0" width="100%">
+            <tr>
+              <td><h1 class="PrecioFullTable" style="text-decoration: line-through;color:red;font-family: 'Oswald', sans-serif;"><h1></td>
+              <td><h1 class="PrecioFinalTable" style="color:#67a41b;font-family: 'Oswald', sans-serif;"><h1></td>
+            </tr>
+          </table>
+         <br>
+           <h5 style=";margin-top:-20px">¡50% de descuento antes que termine el contador!</h5>
+             <img class="banderaOferta"  width="17px"> Oferta en  <span class="cityOferta"></span>, <span class="paisOferta"></span> </font>
+
+           <hr>
+          <p style="color:red;font-size:13px">*Puede que a tu precio se le agregue IVA o impuesto segun corresponda tu pais*</p>
+        <i class="fa fa-arrow-down fa-4x" aria-hidden="true" style="margin-top:10px; margin-bottom:10px; color:#ee1e52"></i><br>
+        <a href="https://pay.hotmart.com/G42298271Q?off=sohmavxe&checkoutMode=10&src=boton2nuevaweb&offDiscount=50%OFF" style="color: #fff;cursor: pointer" >
+         <img src="img/boton1yoga.gif" width="100%">
+        </a>
+             <br><br>
+        <div class="progress" style="width:95%; margin:auto">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"  role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%; ">90% de los cupos con esta oferta ya fueron vendidos</div>
+        </div>
+        <h5 style="color:#000;margin-top:15px;">
+            <span class="cantidadViendoOfertaUno" style="color:red"></span> <span style="color:red">Personas </span>están viendo esta oferta en este momento.
+            <hr>Sólo quedan  <span style="color:green">4 cupos disponibles en </span> <span class="ciudadOFerta" style="color:green"></span></h5>
+        <!--<img src="img/garantia-total.png" style="width:30%">-->
+        <hr>
+         <br>
+          <h3 style="color:#778457;text-align:center">PREGUNTAS FRECUENTES</h3>
+          <br>
+          <div class="accordion" id="accordionPreguntasFrecuentes">
+            <div class="card">
+              <div class="card-header" id="headingOnePreguntas">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse " data-target="#collapseOnePreguntas" aria-expanded="true" aria-controls="collapseOnePreguntas">
+                  ¿Es apto para principiantes?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOnePreguntas" class="collapse show" aria-labelledby="headingOnePreguntas" data-parent="#accordionPreguntasFrecuentes">
+                <div class="card-body">
+                  <p style="color:#737373">Claro que si, el programa está diseñado para ser desafiante para todo niel, y adaptable a la vez. Cada sesión cuanta con diferentes modificaciones para cada nivel. ¡Si te dispones a ponerle ganas, te irá muy bien!</p>
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwoPreguntas">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoPreguntas" aria-expanded="false" aria-controls="collapseTwoPreguntas">
+                    Tengo 40+ años, ¿Puedo hacer el programa?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwoPreguntas" class="collapse" aria-labelledby="headingTwoPreguntas" data-parent="#accordionPreguntasFrecuentes">
+                <div class="card-body">
+                  <p style="color:#737373">Absolutamente, tengo estudiantes de entre 20 a 60 años de edad.</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingTresPreguntas">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTresPreguntas" aria-expanded="false" aria-controls="collapseTresPreguntas">
+                    Hago mi práctica en casa, ¿Necesito algún implemento especial?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTresPreguntas" class="collapse" aria-labelledby="headingTresPreguntas" data-parent="#accordionPreguntasFrecuentes">
+                <div class="card-body">
+                  <p style="color:#737373">Un tapete de yoga y un par de bloques firmes pueden ser útil. Sin embargo, esta práctica puedes hacerla en cualquier lugar sin implementos una vez sientas más comodidad en tu cuerpo.  </p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingCuatroPreguntas">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseCuatroPreguntas" aria-expanded="false" aria-controls="collapseCuatroPreguntas">
+                    No tengo nada de fuerza, ¿Está bien?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseCuatroPreguntas" class="collapse" aria-labelledby="headingCuatroPreguntas" data-parent="#accordionPreguntasFrecuentes">
+                <div class="card-body">
+                  <p style="color:#737373">El programa será desafiante para todo nivel,  y es así como iras incrementando tu fuerza. Contarás con sesiones específicas para el desarrollo del fortalecimiento y estabilidad de tu cuerpo. Cada sesión está estructurada con progresiones y variaciones para cada quien. </p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingCincoPreguntas">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseCincoPreguntas" aria-expanded="false" aria-controls="collapseCincoPreguntas">
+                    No tengo nada de flexibilidad, ¿Me servirá este programa?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseCincoPreguntas" class="collapse" aria-labelledby="headingCincoPreguntas" data-parent="#accordionPreguntasFrecuentes">
+                <div class="card-body">
+                  <p style="color:#737373">La flexibilidad siempre nos va a hacer las cosas más sencillas, sin embargo, no es un requerimiento para la práctica, cada clase en sí nos guía a través de ejercicios y posturas flexibilidad que te irán ayudando.</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingSeisPreguntas">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeisPreguntas" aria-expanded="false" aria-controls="collapseSeisPreguntas">
+                    ¿Puedo comprar el programa ahora, pero empezar más adelante?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSeisPreguntas" class="collapse" aria-labelledby="collapseSeisPreguntas" data-parent="#accordionPreguntasFrecuentes">
+                <div class="card-body">
+                  <p style="color:#737373">Definitivamente, sí, tendrás completo acceso al programa DE POR VIDA para que puedas empezar cuando quieras e ir a tu ritmo, hay mucho material así que podrás ocuparte por meses.</p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+<br><br>
+        <h5 style="color:red">Si tienes problemas al realizar el pago, contacta con nosotros mediante WhatsApp</h5>
+        <a href="https://api.whatsapp.com/send/?phone=+573156843792&text=Hola+quiero+resolver+una+duda+antes+de+adquirir+el+programa+de+balance" class="btn btn-success">Escribir al WhatsApp</a>
+      </div>
+    </div>
+<!--
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Testimonios de algunos alumnos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators"  >
+            <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active" style="background:#e9ecf1"></li>
+            <li data-target="#carouselExampleIndicators3" data-slide-to="1" style="background:#e9ecf1"></li>
+            <li data-target="#carouselExampleIndicators3" data-slide-to="2" style="background:#e9ecf1"></li>
+            <li data-target="#carouselExampleIndicators3" data-slide-to="3" style="background:#e9ecf1"></li>
+
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/captura1.jpeg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/captura2.jpeg">
+            </div>
+
+            <div class="carousel-item ">
+              <img class="d-block w-100" src="img/captura3.jpeg">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/captura4.jpeg">
+            </div>
+
+          </div>
+          <br><br><br><br>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev"  >
+            <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+            <span class="sr-only" >Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next" >
+            <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<section class="page-section" style=";padding: 2rem 0;background:#f5f5f5">
+ <div class="container">
+   <div class="row">
+     <div class="col-md-12 col-lg-12 col-xl-12" style="padding:7%">
+       <img src="img/garantia.png" style="width:100%">
+       <h2 class="masthead-heading text-uppercase mb-0" style="text-align:center;color:#a0c9a2;font-family: 'Quicksand', sans-serif">POLITICA Y GARANTÍA DE SATISFACCIÓN</h2>
+   <h5 style="color:#000; text-align:center;font-weight:100;margin-top:20px">Tienes 7 días a partir de la compra para probar Yoga - Balance de brazos®. Si dentro de ese período el programa no cumple y/o supera tus expectativas, <b style="font-weight:bold">vamos a devolver tu dinero SIN hacer preguntas.</b> Te lo garantiza Hotmart®, la plataforma donde vas a realizar el pago.</h5>
+     </div>
+   </div>
+ </div>
+</section>
+
+  <section class="copyright py-4 text-center text-white" style="background:#ffffff;padding-top: 3.5rem !important;">
+    <div class="container">
+      <small style="color: #2b404a">Copyright &copy; Yo Soy Oscar 2022 - Todos los derechos reservados</small>
+      <p style="color: #2b404a;margin-top:10px">DESCARGOS DE RESPONSABILIDAD IMPORTANTES: Este sitio no es parte del sitio web de Facebook o Facebook, Inc. Además, este sitio no está respaldado por Facebook de ninguna manera. FACEBOOK es una marca registrada de FACEBOOK, Inc.</p>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+
+   <div id="countdown"></div>
+   <script>
+   var someDate = new Date();
+   var dd = someDate.getDate();
+   var mm = someDate.getMonth() + 1;
+   var y = someDate.getFullYear();
+   if(mm<10){
+     mm= "0"+mm;
+   }
+
+   if(dd<10){
+     dd= "0"+dd;
+   }
+   var newFecha = mm+"/"+dd+"/"+y;
+
+   var horaActual = new Date();
+    horaActual.setMinutes(horaActual.getMinutes()+52);
+   var horaActualFinal = horaActual.getHours();
+   var end = new Date(horaActual);
+   //var end = new Date(newFecha+' 11:59 PM'); // fin del dia
+
+
+       var _second = 1000;
+       var _minute = _second * 60;
+       var _hour = _minute * 60;
+       var _day = _hour * 24;
+       var timer;
+
+       function showRemaining() {
+           var now = new Date();
+           var distance = end - now;
+           if (distance < 0) {
+
+               clearInterval(timer);
+               document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+               return;
+           }
+           var days = Math.floor(distance / _day);
+           var hours = Math.floor((distance % _day) / _hour);
+           var minutes = Math.floor((distance % _hour) / _minute);
+           var seconds = Math.floor((distance % _minute) / _second);
+
+/*  Para el reloj en bottom
+           document.getElementById('horasShow2').innerHTML = hours;
+           document.getElementById('minutosShow2').innerHTML = minutes;
+           document.getElementById('segundosShow2').innerHTML = seconds;*/
+
+
+           document.getElementById('horasShow').innerHTML = hours;
+           document.getElementById('minutosShow').innerHTML = minutes;
+           document.getElementById('segundosShow').innerHTML = seconds;
+       }
+
+       timer = setInterval(showRemaining, 1000);
+
+   </script>
+
+
+</body>
+
+</html>
