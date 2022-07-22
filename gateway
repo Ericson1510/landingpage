@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js no-svg" data-op3-support="no-js no-svg no-webp no-avif">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<title>vsl &#8211; PurpleMoon</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans%3A100%2C400%2C500%2C600%2C700%7CMontserrat%3A100%2C400%2C500%2C600%2C700%7CPoppins%3A100%2C400%2C500%2C600%2C700&#038;display=swap" /><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="dca369eff455e5ad297f6e05-|49"></script><style id="" media="print" onload="this.media='all'">/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX-KVElMYYaJe8bpLHnCwDKjbLuGqZJSdY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX-KVElMYYaJe8bpLHnCwDKjbLuE6ZJSdY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX-KVElMYYaJe8bpLHnCwDKjbLuFKZJSdY.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX-KVElMYYaJe8bpLHnCwDKjbLuGKZJSdY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX-KVElMYYaJe8bpLHnCwDKjbLuGaZJSdY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX-KVElMYYaJe8bpLHnCwDKjbLuF6ZJ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYXgKVElMYYaJe8bpLHnCwDKhdzeFb5N.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYXgKVElMYYaJe8bpLHnCwDKhdXeFb5N.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYXgKVElMYYaJe8bpLHnCwDKhdLeFb5N.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYXgKVElMYYaJe8bpLHnCwDKhd7eFb5N.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYXgKVElMYYaJe8bpLHnCwDKhd_eFb5N.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYXgKVElMYYaJe8bpLHnCwDKhdHeFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIxsdO_q.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIVsdO_q.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIJsdO_q.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjSL9AI5sdO_q.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjSL9AI9sdO_q.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIFsdA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIxsdO_q.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIVsdO_q.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIJsdO_q.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjQ76AI5sdO_q.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjQ76AI9sdO_q.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFsdA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIxsdO_q.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIVsdO_q.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIJsdO_q.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjWr7AI5sdO_q.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjWr7AI9sdO_q.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFsdA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTucXtAKPY.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTufntAKPY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTucHtA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans%3A100%2C400%2C500%2C600%2C700%7CMontserrat%3A100%2C400%2C500%2C600%2C700%7CPoppins%3A100%2C400%2C500%2C600%2C700&#038;display=swap" /></noscript>
+<style>
+#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon:before {
+	content: "\f160";
+	color: #02CA02;
+	top: 3px;
+}
+#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon {
+	transform: rotate(45deg);
+}
+</style>
+<meta name='robots' content='max-image-preview:large' />
+<script type="dca369eff455e5ad297f6e05-application/javascript">console.log('PixelYourSite Free version 9.1.1');</script>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.gstatic.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="PurpleMoon &raquo; Feed" href="http://purplemoon.digital/feed/" />
+<link rel="alternate" type="application/rss+xml" title="PurpleMoon &raquo; Feed de los comentarios" href="http://purplemoon.digital/comments/feed/" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<noscript></noscript>
+
+
+<link class="op3-viewport-image-preload op3-viewport-image-preload-original" rel="preload" as="image" href="https://purplemoon.digital/wp-content/uploads/2022/07/fondolanding-reducida-1-2.jpg" type="image/jpeg" media="screen" />
+<link class="op3-viewport-image-preload op3-viewport-image-preload-original" rel="preload" as="image" href="https://purplemoon.digital/wp-content/uploads/2022/07/descarga-19-2.png" type="image/png" media="screen" />
+
+<link rel="alternate" type="application/rss+xml" title="PurpleMoon &raquo; Comentario vsl del feed" href="http://purplemoon.digital/funnel/gatewayy/vsl/feed/" />
+<style type="text/css">.brave_popup{display:none}</style><script type="dca369eff455e5ad297f6e05-text/javascript"> var brave_popup_data = {}; var bravepop_emailValidation=false; var brave_popup_videos = {};  var brave_popup_formData = {};var brave_popup_adminUser = false; var brave_popup_pageInfo = {"type":"single","pageID":1330,"singleType":"opf_funnel"};  var bravepop_emailSuggestions={};</script><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link data-minify="1" rel='stylesheet' id='op3-reboot-css' href='http://purplemoon.digital/wp-content/cache/min/1/wp-content/plugins/op-builder/public/assets/css/op3-reboot.css?ver=1658468690' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='op3-frontend-stylesheet-css' href='http://purplemoon.digital/wp-content/cache/min/1/wp-content/plugins/op-builder/public/assets/cache/page-1330.css?ver=1658469310' type='text/css' media='all' />
+<script type="dca369eff455e5ad297f6e05-text/javascript" src='http://purplemoon.digital/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js' defer></script>
+<script type="dca369eff455e5ad297f6e05-text/javascript" src='http://purplemoon.digital/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' defer></script>
+<script type="dca369eff455e5ad297f6e05-text/javascript" id='op3-funnels-tracking-js-extra'>
+/* <![CDATA[ */
+var OPFunnelStats = {"pid":"1330","fid":"1329","nonce":"d329741d22","vid":"1330","queried_object_id":null,"pageview_record_id":null,"rest_url":"http:\/\/purplemoon.digital\/wp-json\/opf\/v1\/stats\/tracking"};
+/* ]]> */
+</script>
+<script data-minify="1" type="dca369eff455e5ad297f6e05-text/javascript" src='http://purplemoon.digital/wp-content/cache/min/1/wp-content/plugins/op-funnels/public/assets/js/tracking.js?ver=1658469310' id='op3-funnels-tracking-js' defer></script>
+<script type="dca369eff455e5ad297f6e05-text/javascript" id='op3-support-js-after'>
+!function(){var A=document,e=A.documentElement,t="data-op3-support",n=function(A){e.setAttribute(t,e.getAttribute(t).replace(new RegExp("no-"+A,"g"),A))},a=function(A,e){var t=new Image;t.onload=function(){n(A)},t.src="data:image/"+A+";base64,"+e};n("js"),A.createElementNS&&A.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect&&n("svg"),a("webp","UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA=="),a("avif","AAAAFGZ0eXBhdmlmAAAAAG1pZjEAAACgbWV0YQAAAAAAAAAOcGl0bQAAAAAAAQAAAB5pbG9jAAAAAEQAAAEAAQAAAAEAAAC8AAAAGwAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAARWlwcnAAAAAoaXBjbwAAABRpc3BlAAAAAAAAAAQAAAAEAAAADGF2MUOBAAAAAAAAFWlwbWEAAAAAAAAAAQABAgECAAAAI21kYXQSAAoIP8R8hAQ0BUAyDWeeUy0JG+QAACANEkA=")}();
+</script>
+<link rel="https://api.w.org/" href="http://purplemoon.digital/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://purplemoon.digital/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://purplemoon.digital/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.0.1" />
+<link rel="canonical" href="http://purplemoon.digital/funnel/gatewayy/vsl/" />
+<link rel='shortlink' href='http://purplemoon.digital/?p=1330' />
+<link rel="alternate" type="application/json+oembed" href="http://purplemoon.digital/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fpurplemoon.digital%2Ffunnel%2Fgatewayy%2Fvsl%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://purplemoon.digital/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fpurplemoon.digital%2Ffunnel%2Fgatewayy%2Fvsl%2F&#038;format=xml" />
+
+<script type="dca369eff455e5ad297f6e05-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59824VT');</script>
+ <script type="dca369eff455e5ad297f6e05-text/javascript">
+			var _statcounter = _statcounter || [];
+			_statcounter.push({"tags": {"author": "admin"}});
+		</script>
+
+<script type="dca369eff455e5ad297f6e05-text/javascript">
+			<!--
+			var sc_project=12776383;
+			var sc_security="e07f1315";
+			var sc_invisible=1;
+			var scJsHost = (("https:" == document.location.protocol) ?
+				"https://secure." : "http://www.");
+			//-->
+					</script>
+<script type="dca369eff455e5ad297f6e05-text/javascript" src="https://secure.statcounter.com/counter/counter.js" async></script> <noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/"><img class="statcounter" src="https://c.statcounter.com/12776383/0/e07f1315/1/" alt="web analytics" /></a></div></noscript>
+
+<script id="wpcp_disable_selection" type="dca369eff455e5ad297f6e05-text/javascript">
+var image_save_msg='You are not allowed to save images!';
+	var no_menu_msg='Context Menu disabled!';
+	var smessage = "";
+
+function disableEnterKey(e)
+{
+	var elemtype = e.target.tagName;
+	
+	elemtype = elemtype.toUpperCase();
+	
+	if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED")
+	{
+		elemtype = 'TEXT';
+	}
+	
+	if (e.ctrlKey){
+     var key;
+     if(window.event)
+          key = window.event.keyCode;     //IE
+     else
+          key = e.which;     //firefox (97)
+    //if (key != 17) alert(key);
+     if (elemtype!= 'TEXT' && (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85  || key == 86 || key == 83 || key == 43 || key == 73))
+     {
+		if(wccp_free_iscontenteditable(e)) return true;
+		show_wpcp_message('You are not allowed to copy content or view source');
+		return false;
+     }else
+     	return true;
+     }
+}
+
+
+/*For contenteditable tags*/
+function wccp_free_iscontenteditable(e)
+{
+	var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
+  	
+	var target = e.target || e.srcElement;
+
+	var elemtype = e.target.nodeName;
+	
+	elemtype = elemtype.toUpperCase();
+	
+	var iscontenteditable = "false";
+		
+	if(typeof target.getAttribute!="undefined" ) iscontenteditable = target.getAttribute("contenteditable"); // Return true or false as string
+	
+	var iscontenteditable2 = false;
+	
+	if(typeof target.isContentEditable!="undefined" ) iscontenteditable2 = target.isContentEditable; // Return true or false as boolean
+
+	if(target.parentElement.isContentEditable) iscontenteditable2 = true;
+	
+	if (iscontenteditable == "true" || iscontenteditable2 == true)
+	{
+		if(typeof target.style!="undefined" ) target.style.cursor = "text";
+		
+		return true;
+	}
+}
+
+////////////////////////////////////
+function disable_copy(e)
+{	
+	var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
+	
+	var elemtype = e.target.tagName;
+	
+	elemtype = elemtype.toUpperCase();
+	
+	if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED")
+	{
+		elemtype = 'TEXT';
+	}
+	
+	if(wccp_free_iscontenteditable(e)) return true;
+	
+	var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+	
+	var checker_IMG = '';
+	if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) {show_wpcp_message(alertMsg_IMG);return false;}
+	if (elemtype != "TEXT")
+	{
+		if (smessage !== "" && e.detail == 2)
+			show_wpcp_message(smessage);
+		
+		if (isSafari)
+			return true;
+		else
+			return false;
+	}	
+}
+
+//////////////////////////////////////////
+function disable_copy_ie()
+{
+	var e = e || window.event;
+	var elemtype = window.event.srcElement.nodeName;
+	elemtype = elemtype.toUpperCase();
+	if(wccp_free_iscontenteditable(e)) return true;
+	if (elemtype == "IMG") {show_wpcp_message(alertMsg_IMG);return false;}
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED")
+	{
+		return false;
+	}
+}	
+function reEnable()
+{
+	return true;
+}
+document.onkeydown = disableEnterKey;
+document.onselectstart = disable_copy_ie;
+if(navigator.userAgent.indexOf('MSIE')==-1)
+{
+	document.onmousedown = disable_copy;
+	document.onclick = reEnable;
+}
+function disableSelection(target)
+{
+    //For IE This code will work
+    if (typeof target.onselectstart!="undefined")
+    target.onselectstart = disable_copy_ie;
+    
+    //For Firefox This code will work
+    else if (typeof target.style.MozUserSelect!="undefined")
+    {target.style.MozUserSelect="none";}
+    
+    //All other  (ie: Opera) This code will work
+    else
+    target.onmousedown=function(){return false}
+    target.style.cursor = "default";
+}
+//Calling the JS function directly just after body load
+window.onload = function(){disableSelection(document.body);};
+
+//////////////////special for safari Start////////////////
+var onlongtouch;
+var timer;
+var touchduration = 1000; //length of time we want the user to touch before we do something
+
+var elemtype = "";
+function touchstart(e) {
+	var e = e || window.event;
+  // also there is no e.target property in IE.
+  // instead IE uses window.event.srcElement
+  	var target = e.target || e.srcElement;
+	
+	elemtype = window.event.srcElement.nodeName;
+	
+	elemtype = elemtype.toUpperCase();
+	
+	if(!wccp_pro_is_passive()) e.preventDefault();
+	if (!timer) {
+		timer = setTimeout(onlongtouch, touchduration);
+	}
+}
+
+function touchend() {
+    //stops short touches from firing the event
+    if (timer) {
+        clearTimeout(timer);
+        timer = null;
+    }
+	onlongtouch();
+}
+
+onlongtouch = function(e) { //this will clear the current selection if anything selected
+	
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "EMBED" && elemtype != "OPTION")	
+	{
+		if (window.getSelection) {
+			if (window.getSelection().empty) {  // Chrome
+			window.getSelection().empty();
+			} else if (window.getSelection().removeAllRanges) {  // Firefox
+			window.getSelection().removeAllRanges();
+			}
+		} else if (document.selection) {  // IE?
+			document.selection.empty();
+		}
+		return false;
+	}
+};
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+    window.addEventListener("touchstart", touchstart, false);
+    window.addEventListener("touchend", touchend, false);
+});
+
+function wccp_pro_is_passive() {
+
+  var cold = false,
+  hike = function() {};
+
+  try {
+	  const object1 = {};
+  var aid = Object.defineProperty(object1, 'passive', {
+  get() {cold = true}
+  });
+  window.addEventListener('test', hike, aid);
+  window.removeEventListener('test', hike, aid);
+  } catch (e) {}
+
+  return cold;
+}
+/*special for safari End*/
+</script>
+<script id="wpcp_disable_Right_Click" type="dca369eff455e5ad297f6e05-text/javascript">
+document.ondragstart = function() { return false;}
+	function nocontext(e) {
+	   return false;
+	}
+	document.oncontextmenu = nocontext;
+</script>
+<style>
+.unselectable
+{
+-moz-user-select:none;
+-webkit-user-select:none;
+cursor: default;
+}
+html
+{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+</style>
+<script id="wpcp_css_disable_selection" type="dca369eff455e5ad297f6e05-text/javascript">
+var e = document.getElementsByTagName('body')[0];
+if(e)
+{
+	e.setAttribute('unselectable',on);
+}
+</script>
+
+<meta property="og:image" content="http://purplemoon.digital/wp-content/uploads/2022/07/medialibraryjFOHMB-medium.jpg" />
+<meta property="og:title" content="vsl" />
+<meta property="og:description" content="Experimento de la &quot;CIA&quot; revela como activar:&amp;nbsp;&quot;Tres extraños Interruptores de Energía&quot;&amp;nbsp;que han impedido que tus manifestaciones salgan con éxito y que tu bioenergía se liberevar s=document.createElement(&quot;script&quot;);s.src=&quot;https://scripts.converteai.net/29670089-0496-4673-9308-b7247872a764/players/62d4573e6008c2000ba71527/player.js&quot;,s.async=!0,document.head.appendChild(s);¡Espera un momento a que cargue la presentación&amp;nbsp;TOCA AQUÍ PARA CONOCER MÁSSOBRE EL PROGRAMA© Copyright 2022.&amp;nbsp; PURPLEMOON. S.A.SEste sitio no forma parte ni está respaldado por Facebook &amp;#x2122;&amp;#xfe0f;. Facebook &amp;#x2122;&amp;#xfe0f; es una marca comercial de&amp;hellip;" />
+<meta property="og:url" content="http://purplemoon.digital/funnel/gatewayy/vsl/" />
+<meta property="og:image:secure_url" content="http://purplemoon.digital/wp-content/uploads/2022/07/medialibraryjFOHMB-medium.jpg" />
+<meta property="twitter:image" content="http://purplemoon.digital/wp-content/uploads/2022/07/medialibraryjFOHMB-medium.jpg" />
+<meta property="twitter:title" content="vsl" />
+<meta property="twitter:description" content="Experimento de la &quot;CIA&quot; revela como activar:&amp;nbsp;&quot;Tres extraños Interruptores de Energía&quot;&amp;nbsp;que han impedido que tus manifestaciones salgan con éxito y que tu bioenergía se liberevar s=document.createElement(&quot;script&quot;);s.src=&quot;https://scripts.converteai.net/29670089-0496-4673-9308-b7247872a764/players/62d4573e6008c2000ba71527/player.js&quot;,s.async=!0,document.head.appendChild(s);¡Espera un momento a que cargue la presentación&amp;nbsp;TOCA AQUÍ PARA CONOCER MÁSSOBRE EL PROGRAMA© Copyright 2022.&amp;nbsp; PURPLEMOON. S.A.SEste sitio no forma parte ni está respaldado por Facebook &amp;#x2122;&amp;#xfe0f;. Facebook &amp;#x2122;&amp;#xfe0f; es una marca comercial de&amp;hellip;" />
+
+<link rel="preload" href="https://scripts.converteai.net/29670089-0496-4673-9308-b7247872a764/players/62d4573e6008c2000ba71527/player.js" as="script">
+<link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+<link rel="preload" href="https://images.converteai.net/29670089-0496-4673-9308-b7247872a764/players/62d4573e6008c2000ba71527/thumbnail.jpg" as="image">
+<link rel="preload" href="https://cdn.converteai.net/29670089-0496-4673-9308-b7247872a764/62d450ed445b5d000ba9aae7/playlist.m3u8" as="fetch">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://api.vturb.com.br">
+<style id="op3-custom-css"></style> <noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body class="opf_funnel-template opf_funnel-template-op_builder_blank single single-opf_funnel postid-1330 unselectable op-navbar-fixed">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59824VT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+<div id="op3-designer-element">
+<div data-op3-children="4"><div id="op3-element-5dV2sTIk" class="op3-element " data-op3-uuid="5dV2sTIk" data-op3-gid="" data-op3-element-type="section" data-op3-element-spec="" data-op3-element-caption="Section #5dV2sTIk" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0" data-op3-sticky="0" data-op3-sticky-active-desktop="1" data-op3-sticky-active-tablet="1" data-op3-sticky-active-mobile="1" data-op3-sticky-top-desktop="0px" data-op3-sticky-top-tablet="0px" data-op3-sticky-top-mobile="0px" data-op3-sticky-until="0" data-op3-sticky-until-element=""><div data-op3-border><div data-op3-background="base"></div><div data-op3-background="image" class="op3-background-image"></div></div><div data-op3-children="2"><div id="op3-element-Dh3PyfYH" class="op3-element " data-op3-uuid="Dh3PyfYH" data-op3-gid="" data-op3-element-type="row" data-op3-element-spec="" data-op3-element-caption="Row #Dh3PyfYH" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0" data-op3-sticky="0" data-op3-sticky-active-desktop="1" data-op3-sticky-active-tablet="1" data-op3-sticky-active-mobile="0" data-op3-sticky-top-desktop="0px" data-op3-sticky-top-tablet="0px" data-op3-sticky-top-mobile="0px" data-op3-sticky-until="0" data-op3-sticky-until-element=""><div data-op3-children="1" data-op3-stack-columns-desktop="0" data-op3-stack-columns-desktop-reverse="0" data-op3-stack-columns-tablet="0" data-op3-stack-columns-tablet-reverse="0" data-op3-stack-columns-mobile="1" data-op3-stack-columns-mobile-reverse="0" data-op3-wrap-columns-desktop="0" data-op3-wrap-columns-tablet="0" data-op3-wrap-columns-mobile="0"><div id="op3-element-V7NItfwO" class="op3-element " data-op3-uuid="V7NItfwO" data-op3-gid="" data-op3-element-type="column" data-op3-element-spec="" data-op3-element-caption="Column #V7NItfwO" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div class="op3-column-content op3-background-parent" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div data-op3-element-container><div data-op3-children="1"><div id="op3-element-IGM0BUfR" class="op3-element " data-op3-uuid="IGM0BUfR" data-op3-gid="" data-op3-element-type="image" data-op3-element-spec="" data-op3-element-caption="Image #IGM0BUfR" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><figure class="op3-background-ancestor" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div class="op3-image-overlay-container"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20523%2096'%3E%3C/svg%3E" alt="" title="descarga (19)" width="523" height="96" data-op3-attachment-id="1291" data-lazy-src="https://purplemoon.digital/wp-content/uploads/2022/07/descarga-19-2.png" /><noscript><img src="https://purplemoon.digital/wp-content/uploads/2022/07/descarga-19-2.png" alt="" title="descarga (19)" width="523" height="96" data-op3-attachment-id="1291" /></noscript></div></figure></div></div></div></div></div></div></div></div><div id="op3-element-uQQQ1SJd" class="op3-element " data-op3-uuid="uQQQ1SJd" data-op3-gid="" data-op3-element-type="row" data-op3-element-spec="" data-op3-element-caption="Row #uQQQ1SJd" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0" data-op3-sticky="0" data-op3-sticky-active-desktop="1" data-op3-sticky-active-tablet="1" data-op3-sticky-active-mobile="0" data-op3-sticky-top-desktop="0px" data-op3-sticky-top-tablet="0px" data-op3-sticky-top-mobile="0px" data-op3-sticky-until="0" data-op3-sticky-until-element=""><div data-op3-children="1" data-op3-stack-columns-desktop="0" data-op3-stack-columns-desktop-reverse="0" data-op3-stack-columns-tablet="0" data-op3-stack-columns-tablet-reverse="0" data-op3-stack-columns-mobile="1" data-op3-stack-columns-mobile-reverse="0" data-op3-wrap-columns-desktop="0" data-op3-wrap-columns-tablet="0" data-op3-wrap-columns-mobile="0"><div id="op3-element-HZjtOEW3" class="op3-element " data-op3-uuid="HZjtOEW3" data-op3-gid="" data-op3-element-type="column" data-op3-element-spec="" data-op3-element-caption="Column #HZjtOEW3" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div class="op3-column-content op3-background-parent" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div data-op3-element-container><div data-op3-children="5"><div id="op3-element-tQN5BXEG" class="op3-element " data-op3-uuid="tQN5BXEG" data-op3-gid="" data-op3-element-type="headline" data-op3-element-spec="" data-op3-element-caption="Headline #tQN5BXEG" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><div class="op3-headline-wrapper" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div data-op3-contenteditable><h2><span style="color: rgb(255, 255, 255);">Experimento de la "CIA" revela como activar:</span><br></h2></div></div></div><div id="op3-element-JX2mkfKa" class="op3-element " data-op3-uuid="JX2mkfKa" data-op3-gid="" data-op3-element-type="horizontalline" data-op3-element-spec="" data-op3-element-caption="Horizontal Line #JX2mkfKa" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><hr class="horizontal-line" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0" /></div><div id="op3-element-XSkLc3x3" class="op3-element " data-op3-uuid="XSkLc3x3" data-op3-gid="" data-op3-element-type="headline" data-op3-element-spec="" data-op3-element-caption="Headline #XSkLc3x3" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><div class="op3-headline-wrapper" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div data-op3-contenteditable><h2><font color="#ffffff"><span style="background-color: rgba(211, 6, 6, 0.67);">&nbsp;"Tres extraños Interruptores de Energía"</span>&nbsp;que han impedido que tus manifestaciones salgan con éxito y que tu bioenergía se libere</font><br></h2></div></div></div><div id="op3-element-FJzayqkF" class="op3-element " data-op3-uuid="FJzayqkF" data-op3-gid="" data-op3-element-type="row" data-op3-element-spec="" data-op3-element-caption="Row #FJzayqkF" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0" data-op3-sticky="0" data-op3-sticky-active-desktop="1" data-op3-sticky-active-tablet="1" data-op3-sticky-active-mobile="0" data-op3-sticky-top-desktop="0px" data-op3-sticky-top-tablet="0px" data-op3-sticky-top-mobile="0px" data-op3-sticky-until="0" data-op3-sticky-until-element=""><div data-op3-border></div><div data-op3-children="1" data-op3-stack-columns-desktop="0" data-op3-stack-columns-desktop-reverse="0" data-op3-stack-columns-tablet="0" data-op3-stack-columns-tablet-reverse="0" data-op3-stack-columns-mobile="1" data-op3-stack-columns-mobile-reverse="0" data-op3-wrap-columns-desktop="0" data-op3-wrap-columns-tablet="0" data-op3-wrap-columns-mobile="0"><div id="op3-element-fiEyQLde" class="op3-element " data-op3-uuid="fiEyQLde" data-op3-gid="" data-op3-element-type="column" data-op3-element-spec="" data-op3-element-caption="Column #fiEyQLde" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div class="op3-column-content op3-background-parent" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div data-op3-element-container><div data-op3-children="1"><div id="op3-element-nbHHGOx6" class="op3-element " data-op3-uuid="nbHHGOx6" data-op3-gid="" data-op3-element-type="customhtml" data-op3-element-spec="" data-op3-element-caption="Custom HTML #nbHHGOx6" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><div class="op3-custom-html-wrapper" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div data-op3-code-html><div id="vid_62d4573e6008c2000ba71527" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_62d4573e6008c2000ba71527" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;" data-lazy-src="https://images.converteai.net/29670089-0496-4673-9308-b7247872a764/players/62d4573e6008c2000ba71527/thumbnail.jpg"><noscript><img id="thumb_62d4573e6008c2000ba71527" src="https://images.converteai.net/29670089-0496-4673-9308-b7247872a764/players/62d4573e6008c2000ba71527/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></noscript><div id="backdrop_62d4573e6008c2000ba71527" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="dca369eff455e5ad297f6e05-text/javascript" id="scr_62d4573e6008c2000ba71527">var s=document.createElement("script");s.src="https://scripts.converteai.net/29670089-0496-4673-9308-b7247872a764/players/62d4573e6008c2000ba71527/player.js",s.async=!0,document.head.appendChild(s);</script></div></div></div></div></div></div></div></div></div></div><div id="op3-element-5f833vxo" class="op3-element " data-op3-uuid="5f833vxo" data-op3-gid="" data-op3-element-type="row" data-op3-element-spec="" data-op3-element-caption="Row #5f833vxo" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0" data-op3-sticky="0" data-op3-sticky-active-desktop="1" data-op3-sticky-active-tablet="1" data-op3-sticky-active-mobile="0" data-op3-sticky-top-desktop="0px" data-op3-sticky-top-tablet="0px" data-op3-sticky-top-mobile="0px" data-op3-sticky-until="0" data-op3-sticky-until-element=""><div data-op3-children="1" data-op3-stack-columns-desktop="0" data-op3-stack-columns-desktop-reverse="0" data-op3-stack-columns-tablet="0" data-op3-stack-columns-tablet-reverse="0" data-op3-stack-columns-mobile="1" data-op3-stack-columns-mobile-reverse="0" data-op3-wrap-columns-desktop="0" data-op3-wrap-columns-tablet="0" data-op3-wrap-columns-mobile="0"><div id="op3-element-wDYYvDja" class="op3-element " data-op3-uuid="wDYYvDja" data-op3-gid="" data-op3-element-type="column" data-op3-element-spec="" data-op3-element-caption="Column #wDYYvDja" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div class="op3-column-content op3-background-parent" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div data-op3-element-container><div data-op3-children="2"><div id="op3-element-sfjdWVCC" class="op3-element " data-op3-uuid="sfjdWVCC" data-op3-gid="" data-op3-element-type="textwithicon" data-op3-element-spec="" data-op3-element-caption="Icon With Text #sfjdWVCC" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div data-op3-children="3" data-op3-block-display-media="icon" data-op3-block-layout-desktop="0" data-op3-block-layout-tablet="null" data-op3-block-layout-mobile="null"><div id="op3-element-EYZYQXMA" class="op3-element " data-op3-uuid="EYZYQXMA" data-op3-gid="" data-op3-element-type="icon" data-op3-element-spec="icon" data-op3-element-caption="Icon #EYZYQXMA" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><div class="op3-icon-container" data-op3-iconframe="none" data-op3-iconshape="square" data-op3-icon="op3-icon-volume-98-2"><i class="op3-icon op3-icon-volume-98-2" data-op3-icon="op3-icon-volume-98-2"><svg width="1em" height="1em"><use href="http://purplemoon.digital/wp-content/plugins/op-builder/public/assets/cache/page-1330.svg?ver=1658367356#op3-icons-volume-98-2" /></svg></i></div></div><div id="op3-element-JmpjNBhB" class="op3-element " data-op3-uuid="JmpjNBhB" data-op3-gid="" data-op3-element-type="text" data-op3-element-spec="text" data-op3-element-caption="Text Editor #JmpjNBhB" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><div class="op3-text-wrapper" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div data-op3-contenteditable><p><span style="color: rgb(255, 255, 255);">¡<span style="background-color: initial;">Espera un momento a que cargue la presentación&nbsp;</span></span><br></p></div></div></div></div></div></div><div id="op3-element-8P3fXFJb" class="op3-element " data-op3-uuid="8P3fXFJb" data-op3-gid="" data-op3-element-type="button" data-op3-element-spec="" data-op3-element-caption="Button #r5wJlKdK" data-op-visibility-hidden="1" data-op-element-hidden="1" data-op3-style-id="" data-op3-has-children="0"><a class="op3-background-ancestor" target="_blank" data-op-animation-trigger="load_delay" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="36" data-op-timer-seconds="0" data-op3-smooth-scroll="0" data-op-effect-style="pulsate" data-op-effect-style-hover="" href="http://purplemoon.digital/op-funnel-next-step/1330"><div data-op3-background="overlay"></div><div data-op3-border></div><div class="op3-text-container"><i class="op3-icon op3-icon-ob-arrow-right-5" data-op3-icon="op3-icon-ob-arrow-right-5"><svg width="1em" height="1em"><use href="http://purplemoon.digital/wp-content/plugins/op-builder/public/assets/cache/page-1330.svg?ver=1658367356#op3-icons-ob-arrow-right-5" /></svg></i><span class="op3-divider"></span><div class="op3-text op3-html1" data-op3-contenteditable><div>TOCA AQUÍ PARA CONOCER MÁS</div></div></div><div class="op3-subtext op3-html2" data-op3-contenteditable><div>SOBRE EL PROGRAMA</div></div></a></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div id="op3-element-TkpJulsK" class="op3-element " data-op3-uuid="TkpJulsK" data-op3-gid="" data-op3-element-type="section" data-op3-element-spec="" data-op3-element-caption="Section #TkpJulsK" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds="" data-op3-sticky="" data-op3-sticky-active-desktop="" data-op3-sticky-active-tablet="" data-op3-sticky-active-mobile="" data-op3-sticky-top-desktop="" data-op3-sticky-top-tablet="" data-op3-sticky-top-mobile="" data-op3-sticky-until="" data-op3-sticky-until-element=""><div data-op3-border><div data-op3-background="base"></div></div><div data-op3-children="1"><div id="op3-element-0ym3VU34" class="op3-element " data-op3-uuid="0ym3VU34" data-op3-gid="" data-op3-element-type="row" data-op3-element-spec="" data-op3-element-caption="Row #0ym3VU34" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds="" data-op3-sticky="" data-op3-sticky-active-desktop="" data-op3-sticky-active-tablet="" data-op3-sticky-active-mobile="" data-op3-sticky-top-desktop="" data-op3-sticky-top-tablet="" data-op3-sticky-top-mobile="" data-op3-sticky-until="" data-op3-sticky-until-element=""><div data-op3-border><div data-op3-background="base"></div></div><div data-op3-children="1" data-op3-stack-columns-desktop="0" data-op3-stack-columns-desktop-reverse="0" data-op3-stack-columns-tablet="0" data-op3-stack-columns-tablet-reverse="0" data-op3-stack-columns-mobile="1" data-op3-stack-columns-mobile-reverse="0" data-op3-wrap-columns-desktop="0" data-op3-wrap-columns-tablet="0" data-op3-wrap-columns-mobile="0"><div id="op3-element-hnkBf0nq" class="op3-element " data-op3-uuid="hnkBf0nq" data-op3-gid="" data-op3-element-type="column" data-op3-element-spec="" data-op3-element-caption="Column #hnkBf0nq" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div class="op3-column-content op3-background-parent" data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds=""><div data-op3-element-container><div data-op3-children="1"><div id="op3-element-i2lXqB48" class="op3-element " data-op3-uuid="i2lXqB48" data-op3-gid="" data-op3-element-type="text" data-op3-element-spec="" data-op3-element-caption="Text Editor #i2lXqB48" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><div class="op3-text-wrapper" data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds=""><div data-op3-contenteditable><p>© Copyright 2022.&nbsp; PURPLEMOON. S.A.S</p><p>Este sitio no forma parte ni está respaldado por Facebook ™️. Facebook ™️ es una marca comercial de Facebook ™️ Inc. Los resultados indicados anteriormente son mis resultados personales y de mis alumnos. Al final de esta capacitación inicial sin costo le daré la oportunidad a las personas que quieran tener acceso a un programa avanzado que les ayudará a implementar y profundizar aún más en la materia. Esto es completamente opcional.<br></p></div></div></div></div></div></div></div></div></div></div></div></div></div><div id="op3-element-5VNZkWQQ" class="op3-element " data-op3-uuid="5VNZkWQQ" data-op3-gid="" data-op3-element-type="popoverlay" data-op3-element-spec="" data-op3-element-caption="Pop Overlay #5VNZkWQQ" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div class="op3-popoverlay-background"></div><div class="op3-popoverlay-wrapper"><div data-op3-text="Overlay 1" class="op3-popoverlay-content" data-op-animation="1" data-op-timer="0sec" data-op-animation-trigger="none" data-op3-use-on-devices="" data-op3-cookie-expires=""><div data-op3-children="1"><div id="op3-element-9PRA6HdC" class="op3-element " data-op3-uuid="9PRA6HdC" data-op3-gid="" data-op3-element-type="section" data-op3-element-spec="" data-op3-element-caption="Section #9PRA6HdC" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds="" data-op3-sticky="" data-op3-sticky-active-desktop="" data-op3-sticky-active-tablet="" data-op3-sticky-active-mobile="" data-op3-sticky-top-desktop="" data-op3-sticky-top-tablet="" data-op3-sticky-top-mobile="" data-op3-sticky-until="" data-op3-sticky-until-element=""><div data-op3-children="2"><div id="op3-element-28vCFX0e" class="op3-element op3-popoverlay-row-upper" data-op3-uuid="28vCFX0e" data-op3-gid="" data-op3-element-type="row" data-op3-element-spec="" data-op3-element-caption="Row #28vCFX0e" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds="" data-op3-sticky="" data-op3-sticky-active-desktop="" data-op3-sticky-active-tablet="" data-op3-sticky-active-mobile="" data-op3-sticky-top-desktop="" data-op3-sticky-top-tablet="" data-op3-sticky-top-mobile="" data-op3-sticky-until="" data-op3-sticky-until-element=""><div data-op3-border><div data-op3-background="base"></div></div><div data-op3-children="1" data-op3-stack-columns-desktop="0" data-op3-stack-columns-desktop-reverse="0" data-op3-stack-columns-tablet="0" data-op3-stack-columns-tablet-reverse="0" data-op3-stack-columns-mobile="0" data-op3-stack-columns-mobile-reverse="0" data-op3-wrap-columns-desktop="0" data-op3-wrap-columns-tablet="0" data-op3-wrap-columns-mobile="0"><div id="op3-element-CEP0SVlm" class="op3-element " data-op3-uuid="CEP0SVlm" data-op3-gid="" data-op3-element-type="column" data-op3-element-spec="" data-op3-element-caption="Column #CEP0SVlm" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div class="op3-column-content op3-background-parent" data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds=""><div data-op3-element-container><div data-op3-children="1"><div id="op3-element-DFPJ3ldt" class="op3-element op3-popoverlay-headline" data-op3-uuid="DFPJ3ldt" data-op3-gid="" data-op3-element-type="headline" data-op3-element-spec="" data-op3-element-caption="Headline #DFPJ3ldt" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><div class="op3-headline-wrapper" data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds=""><div data-op3-contenteditable><h2 style="cursor: text;">Regístrate al entrenamiento&nbsp; &nbsp;totalmente GRATIS<br></h2></div></div></div></div></div></div></div></div></div></div><div id="op3-element-QoNIT6x7" class="op3-element op3-popoverlay-row-lower" data-op3-uuid="QoNIT6x7" data-op3-gid="" data-op3-element-type="row" data-op3-element-spec="" data-op3-element-caption="Row #QoNIT6x7" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds="" data-op3-sticky="" data-op3-sticky-active-desktop="" data-op3-sticky-active-tablet="" data-op3-sticky-active-mobile="" data-op3-sticky-top-desktop="" data-op3-sticky-top-tablet="" data-op3-sticky-top-mobile="" data-op3-sticky-until="" data-op3-sticky-until-element=""><div data-op3-border><div data-op3-background="base"></div></div><div data-op3-children="1" data-op3-stack-columns-desktop="0" data-op3-stack-columns-desktop-reverse="0" data-op3-stack-columns-tablet="0" data-op3-stack-columns-tablet-reverse="0" data-op3-stack-columns-mobile="0" data-op3-stack-columns-mobile-reverse="0" data-op3-wrap-columns-desktop="0" data-op3-wrap-columns-tablet="0" data-op3-wrap-columns-mobile="0"><div id="op3-element-mk15kP5C" class="op3-element " data-op3-uuid="mk15kP5C" data-op3-gid="" data-op3-element-type="column" data-op3-element-spec="" data-op3-element-caption="Column #mk15kP5C" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div class="op3-column-content op3-background-parent" data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds=""><div data-op3-element-container><div data-op3-children="2"><div id="op3-element-UGn8OSF7" class="op3-element " data-op3-uuid="UGn8OSF7" data-op3-gid="" data-op3-element-type="form" data-op3-element-spec="" data-op3-element-caption="Optin Form #UGn8OSF7" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds=""><form action="http://purplemoon.digital/wp-json/op3/v1/optin/submit" data-method="post"><input type="hidden" name="optin-current-page-id" value="1330" /><input type="hidden" name="optin-current-element-uuid" value="UGn8OSF7" /><input type="hidden" name="optin-integration" value="email" /><input type="hidden" name="optin-list" value="" /><input type="hidden" name="optin-form-id" value="" /><input type="hidden" name="optin-double-optin" value="0" /><input type="hidden" name="optin-tag" value="" /><input type="hidden" name="optin-form" value="" /><input type="hidden" name="optin-email-sequence" value="" /><input type="hidden" name="optin-sequence-level" value="" /><input type="hidden" name="optin-action" value="" /><input type="hidden" name="optin-post-action" value="nextFunnelStep" /><input type="hidden" name="optin-post-action-notification-text" value="Thanks. You will receive email from us soon!" /><input type="hidden" name="optin-post-action-redirect-url" value="" /><input type="hidden" name="optin-post-action-redirect-autofill" value="0" /><input type="hidden" name="optin-post-action-popoverlay-trigger" value="none" /><input type="hidden" name="optin-post-action-funnel-step" value="" /><input type="hidden" name="optin-gdpr-activate" value="off" /><input type="hidden" name="optin-gdpr-field-note" value="" /><input type="submit" value="Submit" tabindex="-1" class="visually-hidden" /><div data-op3-children="2" data-op3-optin-field-layout="stacked"><div id="op3-element-rIaeZISM" class="op3-element " data-op3-uuid="rIaeZISM" data-op3-gid="" data-op3-element-type="input" data-op3-element-spec="" data-op3-element-caption="Input #rIaeZISM" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><label class="op3-element-input-wrapper op3-background-ancestor" data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds="" data-op3-extra-field="" data-op3-extra-field-save-as=""><div class="op3-element-input-edit"><div data-op3-element-container><div data-op3-border><div data-op3-background="overlay"></div></div></div><input class="op3-element-input-edit-text" type="email" name="email" placeholder="Enter your e-mail" value="" required="1" data-op-validation-message="This field is required." data-op-url-mapping="" /><span class="op3-divider"></span><i class="op3-element-input-edit-icon op3-icon op3-icon-email-83-1"><svg width="1em" height="1em"><use href="http://purplemoon.digital/wp-content/plugins/op-builder/public/assets/cache/page-1330.svg?ver=1658367356#op3-icons-email-83-1" /></svg></i></div></label></div><div id="op3-element-HyqqDzHg" class="op3-element " data-op3-uuid="HyqqDzHg" data-op3-gid="" data-op3-element-type="button" data-op3-element-spec="" data-op3-element-caption="Button #HyqqDzHg" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><a class="op3-background-ancestor" target="_self" data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds="" data-op3-smooth-scroll="" data-op-effect-style="" data-op-effect-style-hover="" href="http://purplemoon.digital/op-funnel-next-step/1330"><div data-op3-background="overlay"></div><div class="op3-text-container"><div class="op3-text op3-html1" data-op3-contenteditable><div>¡Quiero asistir al entrenamiento!</div></div></div></a></div></div></form></div></div><div id="op3-element-T9DO3vif" class="op3-element op3-popoverlay-text-privacy" data-op3-uuid="T9DO3vif" data-op3-gid="" data-op3-element-type="text" data-op3-element-spec="" data-op3-element-caption="Text Editor #T9DO3vif" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><div class="op3-text-wrapper" data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds=""><div data-op3-contenteditable><p><span style="color: rgba(92, 90, 90, 0.64);">Procesamos sus datos personales como se indica en nuestra Política de privacidad. Puede retirar su consentimiento en cualquier momento haciendo clic en el enlace para darse de baja en la parte inferior de cualquiera de nuestros correos electrónicos.</span><br></p></div></div></div></div></div></div></div></div></div></div></div></div></div></div><a class="op3-popoverlay-close"><span class="op3-popoverlay-close-text">Close</span><span class="op3-popoverlay-close-icon"></span></a></div></div></div><div id="op3-element-To7lYWUL" class="op3-element " data-op3-uuid="To7lYWUL" data-op3-gid="" data-op3-element-type="popoverlay" data-op3-element-spec="" data-op3-element-caption="Pop Overlay #To7lYWUL" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div class="op3-popoverlay-background"></div><div class="op3-popoverlay-wrapper"><div data-op3-text="Overlay 2" class="op3-popoverlay-content" data-op-animation="1" data-op-timer="0sec" data-op-animation-trigger="none" data-op3-use-on-devices="0" data-op3-cookie-expires="0"><div data-op3-children="1"><div id="op3-element-qxEIbvkL" class="op3-element " data-op3-uuid="qxEIbvkL" data-op3-gid="" data-op3-element-type="section" data-op3-element-spec="" data-op3-element-caption="Section #qxEIbvkL" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0" data-op3-sticky="0" data-op3-sticky-active-desktop="1" data-op3-sticky-active-tablet="1" data-op3-sticky-active-mobile="0" data-op3-sticky-top-desktop="0px" data-op3-sticky-top-tablet="0px" data-op3-sticky-top-mobile="0px" data-op3-sticky-until="0" data-op3-sticky-until-element=""><div data-op3-children="2"><div id="op3-element-s6CZzmW3" class="op3-element " data-op3-uuid="s6CZzmW3" data-op3-gid="" data-op3-element-type="row" data-op3-element-spec="" data-op3-element-caption="Row #s6CZzmW3" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0" data-op3-sticky="0" data-op3-sticky-active-desktop="1" data-op3-sticky-active-tablet="1" data-op3-sticky-active-mobile="0" data-op3-sticky-top-desktop="0px" data-op3-sticky-top-tablet="0px" data-op3-sticky-top-mobile="0px" data-op3-sticky-until="0" data-op3-sticky-until-element=""><div data-op3-border><div data-op3-background="base"></div></div><div data-op3-children="1" data-op3-stack-columns-desktop="0" data-op3-stack-columns-desktop-reverse="0" data-op3-stack-columns-tablet="0" data-op3-stack-columns-tablet-reverse="0" data-op3-stack-columns-mobile="0" data-op3-stack-columns-mobile-reverse="0" data-op3-wrap-columns-desktop="0" data-op3-wrap-columns-tablet="0" data-op3-wrap-columns-mobile="0"><div id="op3-element-lKR8NvhO" class="op3-element " data-op3-uuid="lKR8NvhO" data-op3-gid="" data-op3-element-type="column" data-op3-element-spec="" data-op3-element-caption="Column #lKR8NvhO" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div class="op3-column-content op3-background-parent" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div data-op3-element-container><div data-op3-children="2"><div id="op3-element-8rtcUsMf" class="op3-element " data-op3-uuid="8rtcUsMf" data-op3-gid="" data-op3-element-type="headline" data-op3-element-spec="" data-op3-element-caption="Headline #8rtcUsMf" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><div class="op3-headline-wrapper" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div data-op3-contenteditable><h2>¿A QUÉ CORREO TE ENVIAMOS EL ACCESO DEL ENTRENAMIENTO?</h2></div></div></div><div id="op3-element-SZ1ygcyq" class="op3-element " data-op3-uuid="SZ1ygcyq" data-op3-gid="" data-op3-element-type="text" data-op3-element-spec="" data-op3-element-caption="Text Editor #SZ1ygcyq" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><div class="op3-text-wrapper" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div data-op3-contenteditable><p><i>¡Estamos prontos a cerrar inscripciones!</i><br></p></div></div></div></div></div></div></div></div></div></div><div id="op3-element-buBPN1tq" class="op3-element " data-op3-uuid="buBPN1tq" data-op3-gid="" data-op3-element-type="row" data-op3-element-spec="" data-op3-element-caption="Row #buBPN1tq" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0" data-op3-sticky="0" data-op3-sticky-active-desktop="1" data-op3-sticky-active-tablet="1" data-op3-sticky-active-mobile="0" data-op3-sticky-top-desktop="0px" data-op3-sticky-top-tablet="0px" data-op3-sticky-top-mobile="0px" data-op3-sticky-until="0" data-op3-sticky-until-element=""><div data-op3-border><div data-op3-background="base"></div></div><div data-op3-children="1" data-op3-stack-columns-desktop="0" data-op3-stack-columns-desktop-reverse="0" data-op3-stack-columns-tablet="0" data-op3-stack-columns-tablet-reverse="0" data-op3-stack-columns-mobile="0" data-op3-stack-columns-mobile-reverse="0" data-op3-wrap-columns-desktop="0" data-op3-wrap-columns-tablet="0" data-op3-wrap-columns-mobile="0"><div id="op3-element-JGjPz7RT" class="op3-element " data-op3-uuid="JGjPz7RT" data-op3-gid="" data-op3-element-type="column" data-op3-element-spec="" data-op3-element-caption="Column #JGjPz7RT" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div class="op3-column-content op3-background-parent" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><div data-op3-element-container><div data-op3-children="1"><div id="op3-element-C3x9B3Q2" class="op3-element " data-op3-uuid="C3x9B3Q2" data-op3-gid="" data-op3-element-type="form" data-op3-element-spec="" data-op3-element-caption="Optin Form #C3x9B3Q2" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="1"><div data-op3-element-container data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0"><form action="http://purplemoon.digital/wp-json/op3/v1/optin/submit" data-method="post"><input type="hidden" name="optin-current-page-id" value="1330" /><input type="hidden" name="optin-current-element-uuid" value="C3x9B3Q2" /><input type="hidden" name="optin-integration" value="email" /><input type="hidden" name="optin-list" value="" /><input type="hidden" name="optin-form-id" value="" /><input type="hidden" name="optin-double-optin" value="0" /><input type="hidden" name="optin-tag" value="" /><input type="hidden" name="optin-form" value="" /><input type="hidden" name="optin-email-sequence" value="" /><input type="hidden" name="optin-sequence-level" value="" /><input type="hidden" name="optin-action" value="" /><input type="hidden" name="optin-post-action" value="nextFunnelStep" /><input type="hidden" name="optin-post-action-notification-text" value="Thanks. You will receive email from us soon!" /><input type="hidden" name="optin-post-action-redirect-url" value="" /><input type="hidden" name="optin-post-action-redirect-autofill" value="0" /><input type="hidden" name="optin-post-action-popoverlay-trigger" value="none" /><input type="hidden" name="optin-post-action-funnel-step" value="none" /><input type="hidden" name="optin-gdpr-activate" value="off" /><input type="hidden" name="optin-gdpr-field-note" value="" /><input type="submit" value="Submit" tabindex="-1" class="visually-hidden" /><div data-op3-children="2" data-op3-optin-field-layout="stacked"><div id="op3-element-lvKCXw3q" class="op3-element " data-op3-uuid="lvKCXw3q" data-op3-gid="" data-op3-element-type="input" data-op3-element-spec="" data-op3-element-caption="Input #lvKCXw3q" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><label class="op3-element-input-wrapper op3-background-ancestor" data-op-animation-trigger="" data-op-animation-style="" data-op-animation-loop="" data-op-timer-minutes="" data-op-timer-seconds="" data-op3-extra-field="" data-op3-extra-field-save-as=""><div class="op3-element-input-edit"><div data-op3-element-container><div data-op3-border><div data-op3-background="overlay"></div></div></div><input class="op3-element-input-edit-text" type="email" name="email" placeholder="Enter your e-mail" value="" required="1" data-op-validation-message="This field is required." data-op-url-mapping="" /><span class="op3-divider"></span><i class="op3-element-input-edit-icon op3-icon op3-icon-email-83-1"><svg width="1em" height="1em"><use href="http://purplemoon.digital/wp-content/plugins/op-builder/public/assets/cache/page-1330.svg?ver=1658367356#op3-icons-email-83-1" /></svg></i></div></label></div><div id="op3-element-AqFmkPY0" class="op3-element " data-op3-uuid="AqFmkPY0" data-op3-gid="" data-op3-element-type="button" data-op3-element-spec="" data-op3-element-caption="Button #AqFmkPY0" data-op-visibility-hidden="0" data-op-element-hidden="0" data-op3-style-id="" data-op3-has-children="0"><a class="op3-background-ancestor" target="_self" data-op-animation-trigger="none" data-op-animation-style="" data-op-animation-loop="0" data-op-timer-minutes="0" data-op-timer-seconds="0" data-op3-smooth-scroll="0" data-op-effect-style="" data-op-effect-style-hover="" href="http://purplemoon.digital/op-funnel-next-step/1330"><div data-op3-background="overlay"></div><div class="op3-text-container"><i class="op3-icon op3-icon-ob-arrow-right-6" data-op3-icon="op3-icon-ob-arrow-right-6"><svg width="1em" height="1em"><use href="http://purplemoon.digital/wp-content/plugins/op-builder/public/assets/cache/page-1330.svg?ver=1658367356#op3-icons-ob-arrow-right-6" /></svg></i><span class="op3-divider"></span><div class="op3-text op3-html1" data-op3-contenteditable><div>¡ACCEDE AL CURSO GRATUITO AHORA!</div></div></div></a></div></div></form></div></div></div></div></div></div></div></div></div></div></div></div></div><a class="op3-popoverlay-close"><span class="op3-popoverlay-close-text">Close</span><span class="op3-popoverlay-close-icon"></span></a></div></div></div></div>
+</div>
+<div id="wpcp-error-message" class="msgmsg-box-wpcp hideme"><span>error: </span></div>
+<script type="dca369eff455e5ad297f6e05-text/javascript">
+	var timeout_result;
+	function show_wpcp_message(smessage)
+	{
+		if (smessage !== "")
+			{
+			var smessage_text = '<span>Alert: </span>'+smessage;
+			document.getElementById("wpcp-error-message").innerHTML = smessage_text;
+			document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp showme";
+			clearTimeout(timeout_result);
+			timeout_result = setTimeout(hide_message, 3000);
+			}
+	}
+	function hide_message()
+	{
+		document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
+	}
+	</script>
+<style type="text/css">
+	#wpcp-error-message {
+	    direction: ltr;
+	    text-align: center;
+	    transition: opacity 900ms ease 0s;
+	    z-index: 99999999;
+	}
+	.hideme {
+    	opacity:0;
+    	visibility: hidden;
+	}
+	.showme {
+    	opacity:1;
+    	visibility: visible;
+	}
+	.msgmsg-box-wpcp {
+		border:1px solid #f5aca6;
+		border-radius: 10px;
+		color: #555;
+		font-family: Tahoma;
+		font-size: 11px;
+		margin: 10px;
+		padding: 10px 36px;
+		position: fixed;
+		width: 255px;
+		top: 50%;
+  		left: 50%;
+  		margin-top: -10px;
+  		margin-left: -130px;
+  		-webkit-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+		-moz-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+		box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+	}
+	.msgmsg-box-wpcp span {
+		font-weight:bold;
+		text-transform:uppercase;
+	}
+		.warning-wpcp {
+		background:#ffecec url('http://purplemoon.digital/wp-content/plugins/wp-content-copy-protector/images/warning.png') no-repeat 10px 50%;
+	}
+    </style>
+<div id="bravepop_element_tooltip"></div><div id="bravepop_element_lightbox"><div id="bravepop_element_lightbox_close" onclick="if (!window.__cfRLUnblockHandlers) return false; brave_lightbox_close()" data-cf-modified-dca369eff455e5ad297f6e05-=""></div><div id="bravepop_element_lightbox_content"></div></div><link rel='stylesheet' id='bravepop_front_css-css' href='http://purplemoon.digital/wp-content/plugins/bravepopup-pro/assets/css/frontend.min.css?ver=6.0.1' type='text/css' media='all' />
+<script type="dca369eff455e5ad297f6e05-text/javascript" id='op3-frontend-scripts-inline-js-after'>
+;window.OP3={"Meta":{"wpLocale":"es_ES","pageTitle":"vsl","pageDescription":"","pageFeaturedImage":"https:\/\/purplemoon.digital\/wp-content\/uploads\/2022\/07\/medialibraryjFOHMB-medium.jpg","pageId":1330,"homeUrl":"https:\/\/purplemoon.digital","siteUrl":"https:\/\/purplemoon.digital","pageUrl":"https:\/\/purplemoon.digital\/funnel\/gatewayy\/vsl\/","facebookAppId":false,"facebookLang":false},"GoogleRecaptcha":{"googleRecaptchaSiteKey":false},"Settings":{"lazyLoadAssets":"default"}};
+</script>
+<script data-minify="1" type="dca369eff455e5ad297f6e05-text/javascript" src='http://purplemoon.digital/wp-content/cache/min/1/wp-content/plugins/op-builder/public/assets/cache/page-1330.nodelay.js?ver=1658469310' id='op3-frontend-scripts-nodelay-js' defer></script>
+<script data-minify="1" type="dca369eff455e5ad297f6e05-text/javascript" src='http://purplemoon.digital/wp-content/cache/min/1/wp-content/plugins/op-builder/public/assets/cache/page-1330.js?ver=1658469310' id='op3-frontend-scripts-main-js' defer></script>
+<script type="dca369eff455e5ad297f6e05-text/javascript" id='bravepop_front_js-js-extra'>
+/* <![CDATA[ */
+var bravepop_global = {"loggedin":"false","isadmin":"false","referer":"","security":"2b36ef8555","goalSecurity":"3dc8e6ff9a","ajaxURL":"http:\/\/purplemoon.digital\/wp-admin\/admin-ajax.php","field_required":"Required","no_html_allowed":"No Html Allowed","invalid_number":"Invalid Number","invalid_email":"Invalid Email","invalid_url":"Invalid URL","invalid_date":"Invalid Date","fname_required":"First Name is Required.","lname_required":"Last Name is Required.","username_required":"Username is Required.","email_required":"Email is Required.","email_invalid":"Invalid Email addresss.","pass_required":"Password is Required.","pass_short":"Password is too Short.","yes":"Yes","no":"No","login_error":"Something Went Wrong. Please contact the Site administrator.","pass_reset_success":"Please check your Email for the Password reset link.","customFonts":[]};
+/* ]]> */
+</script>
+<script data-minify="1" type="dca369eff455e5ad297f6e05-text/javascript" src='http://purplemoon.digital/wp-content/cache/min/1/wp-content/plugins/bravepopup-pro/assets/frontend/brave.js?ver=1658468690' id='bravepop_front_js-js' defer></script>
+<script type="dca369eff455e5ad297f6e05-text/javascript">window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="http://purplemoon.digital/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js" type="dca369eff455e5ad297f6e05-text/javascript"></script><script type="dca369eff455e5ad297f6e05-text/javascript">function lazyLoadThumb(e){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="dca369eff455e5ad297f6e05-|49" defer=""></script></body>
+</html>
